@@ -1,3 +1,7 @@
 body {
-    background-color: #ff0000;
+    background-image: url(Union.png);
+}
+
+nav {
+    background-color: #d18d8d;
 }
