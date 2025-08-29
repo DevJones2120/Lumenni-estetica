@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="contato.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav>
-              <ul>
+              <ul class="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -18,45 +18,73 @@
     </header>
     <main>
         <article>
-            <div class="Fx-contato">
-                <h3>Entre em</h3>
-                <h2>CONTATO</h2>
+            <div class="container-contato">
+                <div class="Fx-contato">
+                    <h3>Entre em</h3>
+                    <h2>CONTATO</h2>
+                </div>
             </div>
+
             <div class="car-agen">
                 <h1>Agende sua consulta agora</h1>
                 <button class="btn-agen" type="button">Agende já</button>
             </div>
 
+            <div class="formulario">
                 <form action="https://seue-mail.com" method="POST">
-                  <div class="form"></div>
-                    <label for="name">Nome:</label>
-                    <input type="text" name="nome" placeholder="Digite seu Nome" id="nome" required/>
-                 </div>
-                 <div class="form"></div>
-                    <label for="sobrenome">Sobrenome:</label>
-                    <input type="text" name="sobrenome" placeholder="Digite seu Sobrenome" id="sobrenome" required/>
-                 </div>
-                 <div class="form"></div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email" placeholder="Digite seu E-mail" id="email" required/>
-                 </div>
-                 <div class="form"></div>
-                    <label for="telefone">Whatsapp:</label>
-                    <input type="tel" name="telefone" placeholder="Seu Whatsapp" id="telefone" required/>
-                 </div>
-                 <div class="form"></div>
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" cols="33"> Digite uma Mensagem</textarea>
-                    <button class="btn-enviar" type="submit">Enviar</button>
-                 </div>
-                 
-                    <div class="container">
-                        <h2>Conecte-se com a gente!</h2>
-                        <h3>Fique por dentro de dicas de beleza e novidades. Siga a LUMENNI nas redes sociais, lá compartilhamos dicas exclusivas, transformações incriveis!</h3>
+                  
+                    <div class="form">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="nome" placeholder="Digite seu Nome" id="nome" required/>
+                     </div>
+
+                    <div class="form">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" placeholder="Digite seu Sobrenome" id="sobrenome" required/>
+                    </div>
+
+                    <div class="form">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" placeholder="Digite seu E-mail" id="email" required/>
+                    </div>
+
+                    <div class="form">
+                        <label for="telefone">Whatsapp:</label>
+                        <input type="tel" name="telefone" placeholder="Seu Whatsapp" id="telefone" required/>
+                    </div>
+
+                    <div class="form">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" cols="33"> Digite uma Mensagem</textarea>
+                        <button class="btn-enviar" type="submit">Enviar</button>
+                        </div>
+                    </div>
+
+                    <div class="car-redes">
+                        <h2 class="h2-redes">Conecte-se com a gente!</h2>
+                        <h3 class="h3-redes">Fique por dentro de dicas de beleza e novidades. Siga a LUMENNI nas redes sociais, lá compartilhamos dicas exclusivas, transformações incriveis!</h3>
                         <div class="redes-sociais">
-                            <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
-                            <a href="#"><img src="img/tiktok.png" alt="Tiktok"></a>
-                            <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+
+                            <ul class="car-redes">
+                                <li class="ca-redes">
+                                    <a href="#">
+                                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                                        <span> -Instagram </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-tiktok" aria-hidden="true"></i>
+                                        <span> -Tiktok </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                                        <span> -Facebook </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                    
                         <div class="contato-info">
