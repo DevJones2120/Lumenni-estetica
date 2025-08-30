@@ -19,6 +19,26 @@ header {
     display: flex;
 }
 
+.destaque {
+    display: grid;
+    grid-template-columns: 2fr .5fr .5fr;
+    gap: 2px;
+    transition: grid-template-columns .3;
+}
+
+.destaque:has(.left:hover) {
+    grid-template-columns: 2fr .5fr .5fr;
+}
+
+.destaque:has(.center:hover) {
+    grid-template-columns: 5fr .2fr .5fr;
+}
+
+.destaque:has(.left:hover) {
+    grid-template-columns: 5fr .5fr .2fr;
+}
+
+
 main {
     padding-top: 60px;
     padding-bottom: 60px;
