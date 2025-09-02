@@ -1,0 +1,347 @@
+@import url(variaveis.css);
+
+body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      
+      
+    }
+
+ main {
+    width: 100%;
+    overflow: hidden;
+
+ }
+
+
+
+    header {
+      background: linear-gradient(to left, var(--cacau-acento-color), var(--cacauintenso-color));
+      width: 100%;
+      height: 117px;
+      color: white;
+    
+    }
+    
+    nav {
+
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        margin: 0 auto;
+        padding-top: 50px;
+        margin-right: 50px;
+
+        #logo {
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: absolute;
+            right: 47.6%;
+            top: 50px;
+            color: #f1d390;
+
+        }
+
+
+       
+        img.txt {
+            width: 100px;
+            height: auto;
+            position: absolute;
+            left: 44.8%;
+            top: 29px;
+        }
+
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      
+    }
+
+
+   
+
+/*************************
+**** AREA DAS SECTIONS ****
+**************************/
+
+.container-background {
+    
+    width: 100%;
+    height: 625px;
+    position: absolute;
+    z-index: 0;
+      
+}
+
+
+.text-container {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 0;
+    max-width: 600px;
+
+    h1 {
+        font-family: "Marcellus", Sans-serif;
+        color: var(--cacau-acento-color);
+        text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.112);
+        font-size: 60px;
+        font-weight: 100;
+        line-height: 0.9;
+    }
+
+    p {
+        font-family: "Manrope", Sans-serif;
+    }
+
+    button {
+        margin-top: 10px;
+        font-family: "Manrope", Sans-serif;
+        font-weight: 100;
+        font-size: 18px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--cacau-acento-color);
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        transition: 1s;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-family: "Manrope", Sans-serif;
+        }
+    }
+
+    button:hover {
+        background-color: #824924;
+        transform: translateY(-10px);
+    }
+}
+
+
+.background-image {
+    opacity: 20%;
+    filter: blur(0);
+}
+
+
+
+
+
+.img-drawer {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    
+
+    img {
+        position: absolute;
+        top: -3px;
+        left: 59%;
+        height: 628px;
+        width: auto;
+        max-width: 100%;
+        transition: all 0.5s ease-in-out; 
+
+        &:hover {
+             transform: scale(1.1);
+        }
+
+    }
+}
+
+
+
+
+
+
+.division-vetor1 {
+    width: 1300px;
+    height: 880px;
+    background-color: var(--cacau-acento-color);
+    margin:0;
+    padding: 0;
+    position: relative;
+    top: 190px;
+    left: 50%;
+    z-index: -1;
+    transform: rotate(143.5deg);
+    
+}
+
+.division-vetor2 {
+    
+    img {
+        width: 25px;
+        height: 20px;
+        background-color: #ffffff;
+        border-radius: 10px 10px 50px 50px;
+        margin:0;
+        padding: 0;
+        position: absolute;
+        top: 718px;
+        left: 50%;
+        z-index: 0;
+        cursor: pointer;
+        animation: pular 0.4s infinite alternate;
+    
+    }
+}
+
+ @keyframes pular {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+.division-vetor3 {
+
+    background-color: #ffffff;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    display: flex;
+    top: 0%;
+    bottom: 255px;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+        
+
+    
+
+}
+
+.card1,.card2,.card3 {
+    margin-left: 45px;
+    width: 300px;
+    background-color: none;
+    border: 2px solid #824924;
+    border-radius: 10px;
+    height: 400px;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+    z-index: 0;
+    position: absolute;
+
+       div {
+           background-color: #824924;
+                border-radius: 50%;
+                width: 500px;
+                height: 500px;
+                margin-top: 350px;
+                right: 100px;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                z-index: -1;
+
+            }
+
+             button {
+        
+        position: absolute;
+        background-color: #ffffff00;
+        padding: 12px 24px;        
+        border-radius: 50px;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        cursor: pointer;
+        font-family: "Manrope", Sans-serif;
+        font-size: 16px;
+        padding: 12px 24px;
+        bottom: 10px;
+        left: 100px;
+        transition: 1s;
+
+        
+        
+
+    }
+
+
+    button:hover {
+
+        background-color: #ffffff;
+        color: #824924;
+        border: 2px solid none;
+        
+    }
+
+
+
+
+}
+
+
+.card2 {
+    margin-left: 50%;
+}
+
+.card3 {
+    margin-right: 50%;
+}
+
+
+
+
+
+    footer {
+      background: linear-gradient(to left, var(--cacauintenso-color), var(--cacau-acento-color));
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      position: absolute;
+      z-index: 0;
+      width: 97%;
+      height: 300px;
+      margin-top: 900px;
+    }
+
+
+
+.whatsapp-icon {
+
+    position: fixed;
+    z-index: 100;
+    bottom: 10px;
+    right: 10px;
+    background: #0FBB00;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border-radius: 50%;
+    transition: 1s;
+
+     a {
+        text-decoration: none;
+     }
+
+     img {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+     }
+     
+
+     &:hover {
+         transform: scale(1.1);
+     }
+
+}
