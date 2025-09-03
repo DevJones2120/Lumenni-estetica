@@ -194,8 +194,7 @@ header {
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 24px rgba(28, 21, 63, .12),
-              0 4px 10px rgba(28, 21, 63, .08);
+  box-shadow: 0 16px 24px rgba(28, 21, 63, .12), 0 4px 10px rgba(28, 21, 63, .08);
 }
 
 .card-media {
@@ -209,7 +208,7 @@ header {
   position: absolute;
   inset: 0;
   background: radial-gradient(600px 250px at -10% -10%, rgba(255, 255, 255, .8), transparent 60%),
-              radial-gradient(600px 250px at 110% 110%, rgba(255, 255, 255, .7), transparent 60%);
+  radial-gradient(600px 250px at 110% 110%, rgba(255, 255, 255, .7), transparent 60%);
   opacity: .9;
 }
 
