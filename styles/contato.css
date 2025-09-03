@@ -1,5 +1,5 @@
 body {
-    background-image: url(Union.png);
+    background-image:url(/imagens/Union.png)
 }
 header {
     background-color: black;
@@ -7,104 +7,108 @@ header {
     margin: 0;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    font-size: 20px;
-}
-
-ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-ul li a {
-    text-decoration: none;
-    color: rgb(235, 235, 235);
-}
-ul li a:hover {
-    color: black;
-    font-weight: bold;}
 
 .contato {
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: #F1D488;
     width: 100%;
     margin: 0;
     padding: 20px 0;
     text-align: center;
-    margin: 20px 0;
 }
 h3 {
     font-size: 30px;
-    color: white;
+    color: black;
     text-align: center;
     margin: 15px 0;
+    width: 600px;
 }
 
 h2 {
-    font-size: 50px;
-    color: white;
+    color: black;
     text-align: center;
     margin: 15px 0;
+    font-size: 70px;
 }
 .car-agen {
     text-align: center;
     margin: 20px 0;
+    font-size: 25px;
 }
 
 .btn-agen {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
+    background-color: #F1D488;
+    color: black;
+    padding: 15px 35px;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 25px;
+    margin: 10px;
     cursor: pointer;
     border-radius: 6px;
+    border: none;
 }
 .btn-agen:hover {
-    background-color: #d18d8d;
-    color: black;
-    font-weight: bold;
-    box-shadow: 0 0 20px #2c2424;
+    background-color: #BF9861;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .formulario {
-    background: rgb(175, 159, 159);
-    margin: 10px 0;
-    padding: 20px;
+    background: #EEEADE;
+    margin: 100px 50px;
+    padding: 30px;
     border-radius: 15px;    
     width: 300px;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .formulario input, .formulario textarea {
     padding: 5px;
-    margin: 5px 0 15px 0;
+    margin: 5px 0 20px 0;
     border: none;
-    background: #f1f1f1;
+    background: white;
+    border-radius: 5px;
+    display: block;
+    line-height: 1;
 }
-
+.formulario textarea{
+  min-height: 13px;
+  resize: vertical;
+  
+}
+.btn-enviar{
+  display: block;
+  padding: 10px;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
 .redes{
-    background: rgb(182, 145, 145);
+    background: #CABAA0;
     text-align: center;
-    padding: 10px 0;
-    margin: 0;  
+    padding: 20px ;
+    margin: 300px 200px;
+    border-radius: 15px;
+    display: block;
 }
 
 .h2-redes {
-    color: white;
+    color: black;
     font-size: 40px;
     margin: 10px 0;
     text-align: center;
+  
 }
 .h3-redes {
-    color: white;
-    font-size: 20px;
-    margin: 10px 20px;
-    text-align: justify;
+    color: black;
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
 }
 
 
@@ -138,18 +142,16 @@ ul.car-redes li a span {
 
 ul.car-redes li a{
     text-decoration: none;
-    display: absolute;
-    display: block;
-    width: 210px;
+    display: flex;
+    width: 100px;
     height: 80px;
-    background: black;
+    background: rgb(240, 227, 227);
     text-align: left;
     padding-left: 20px;
     box-shadow: -20px 20px 50px rgba(0,0,0,0.5);
 }
 
 ul.car-redes li a:hover{
-    transform: rotate(0deg) translate(0,0);
     width: 300px;
     box-shadow: -20px 20px 50px rgba(0,0,0,0.5);
 }
@@ -218,39 +220,61 @@ ul.car-redes li a:hover{
     border-radius: 15px;
     font-size: 15px;
 }
-footer {
-    background-color: #000000;
-    text-align: center;
-    padding: 5px 0;
-    margin: 0;
+.rodape {
+    background-color: #ff0000;
     font-size: 10px;
-    color: white;
+    color: #000000;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.linha-footer {
+.coluna {
     background-color: #d4c1c1;
-    font-size: 15px;
-    margin: 10px 0;
-    padding: 15;
+    font-size: 14px;
+    padding: 15px;
+    color: #000000;
+    text-decoration: none;
+    flex: content;
+    margin: 0 20px;
+    min-width: 150px;
 }
 
-.linha-footer nav {
-    margin: 0;
-    padding: 0;
-    top: 50%;
-    left: 50%;
-}
-.footer_1 {
-    color: black;
-    font-weight: bold;
+.coluna h4, .coluna h3{
+    margin-bottom: 20px;
 }
 
-.procedimentos-menu {
-    color: black;
-    margin: 0;
+.coluna ul{
+    list-style: none;
+    padding: 0%;
 }
-
-.redes_footer{
-    color: black;
-    margin: 0;
+.coluna ul li{
+    margin-bottom: 10px;
 }
+.coluna a{
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.coluna a:hover{
+    color: #BF9861;
+    display: flex;
+    gap: 15px;
+}
+.rodape-inferior{
+    background-color: #ffffff;
+    border-top: #000000;
+    padding-top: 20px;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.rodape-inferior p a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    text-align: center;
+ }
