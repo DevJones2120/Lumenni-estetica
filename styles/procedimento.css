@@ -4,17 +4,8 @@
   --banho-sol: #F4C95D;
   --ouro-puro: #D4AF37;
   --cacau-intenso: #4B2E2E;
-
-  --bg: var(--luz-marfi);
-  --card: #ffffff;
-  --brand: var(--banho-sol);
-  --brand-2: var(--ouro-puro);
-  --text: var(--cacau-intenso);
-  --muted: #6b6b7a;
-  --ring: rgba(212, 175, 55, .25);
-  --radius: 18px;
-  --shadow: 0 10px 20px rgba(28, 21, 63, .08),
-            0 2px 6px rgba(28, 21, 63, .06);
+  --text-dark: #333;
+  --text-light: #fff;
 }
 
 * {
