@@ -88,39 +88,66 @@ h2 {
   cursor: pointer;
   transition: 0.2s;
 }
-.redes{
-    background: #CABAA0;
-    text-align: center;
-    padding: 20px ;
-    margin: 300px 200px;
-    border-radius: 15px;
+
+.card-container {
+    max-width: 800px;
+    margin: 40px auto; 
+    padding: 80px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    line-height: 1.6;
     display: block;
+    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
-.h2-redes {
-    color: black;
-    font-size: 40px;
-    margin: 10px 0;
-    text-align: center;
-  
-}
-.h3-redes {
-    color: black;
-    font-size: 15px;
-    margin: 10px;
-    text-align: center;
+.card-header h2 {
+    color: #333;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
+.card-header p {
+    color: #666;
+    margin-bottom: 40px;
+}
 
-ul.redes-sociais {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.info-row {
     display: flex;
-    margin: 0;
-    padding: 0;
+    align-items: flex-start;
+    margin-bottom: 30px;
 }
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.icon-circle i {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.info-text h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.info-text p {
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
 
 ul li a.fa {
     font-size: 40px;
