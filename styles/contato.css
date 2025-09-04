@@ -191,12 +191,11 @@ ul.car-redes li a:hover{
 
 .mapa iframe {
     border: 2px solid black;
-    border-radius: 15px;
     box-shadow: 0 0 20px #2c2424;
     margin: 100px;
     display: block;
     margin-left: auto;
-    width: 450px;
+    width: 500px;
 }
 
 .localização {
@@ -210,25 +209,63 @@ ul.car-redes li a:hover{
     font-size: 15px;
 }
 
-.feedback {
-    background: #F1D488;
-    color: white;
+.conteiner {
+    background-color: #F1D488;
+    color: #ffffff; 
+    padding: 20px 30px;
+    border-radius: 15px; 
+    max-width: 450px;
+    margin: 50px auto; 
+    transform: rotate(-5deg);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-feedback {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 15px;
+}
+
+.user {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff; 
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #f0f0f0; 
+}
+
+.feed {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.user-name {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.avaliacao {
+    color: #f7b731; 
+    font-size: 1.2rem;
+    margin-right: 2px;
+}
+
+.periodo {
+    color: #f0f0f0;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
     text-align: center;
-    padding: 10px 0;
-    margin: 60px;
-    width: 300px;
-    border-radius: 15px;
-    font-size: 15px;
 }
-.feedback p{
-    color: #000000;
-    font-size: 15px;
-}
-.feedback img{
-    width: 300px;
-    padding: 20px;
-    margin: 20px;
-}
+
 footer{
     background-color: #000000;
     font-size: 10px;
