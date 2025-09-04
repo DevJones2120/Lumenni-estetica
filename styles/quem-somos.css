@@ -73,8 +73,7 @@ h1 {
 .destaque>img:hover {
     filter: drop-shadow(0 0 1.4rem var(--banhodesol-color));
     transition: 0.9s;
-    transform-style: preserve-3d;
-    transform: perspective(10cm) X(-15deg) Y(30deg);
+    transform: matrix3d();
 }
 
 .destaque img {
