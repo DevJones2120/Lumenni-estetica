@@ -64,8 +64,23 @@ h1 {
 
     img {
         max-width: 439px;
+        min-width: 439px;
         padding: 2px;
+        border-radius: 5px;
     }
+}
+
+.destaque>img:hover {
+    filter: drop-shadow(0 0 1.4rem var(--banhodesol-color));
+    transition: 0.9s;
+    transform-style: preserve-3d;
+    transform: perspective(10cm) X(-15deg) Y(30deg);
+}
+
+.destaque img {
+    width: 350px;
+    height: auto;
+    border: 1px solid blue;
 }
 
 main {
@@ -78,12 +93,7 @@ main {
     z-index: -1;
 }
 
-.destaque img {
-    width: 500px;
-    height: auto;
-    border: 1px solid blue;
-}
-
+/* Conteudo Principal */
 .cards {
     border: 1px solid red;
 }
@@ -98,13 +108,25 @@ main {
     padding: 20px;
 }
 
+.card:hover {
+    background-color: var(--ouropuro-color);
+    transition: 1.4s;
+}
+
 footer {
     padding-top: 50px;
     padding-bottom: 30px;
     border: 1px solid red;
     display: flex;
     justify-content: center;
+    background: linear-gradient(to left, var(--cacau-acento-color), var(--cacauintenso-color));
+
+    .copy {
+        background: linear-gradient(to right, var(--cacau-acento-color), var(--cacauintenso-color));
+    }
+
 }
+
 
 div.top-icon {
     position: fixed;
