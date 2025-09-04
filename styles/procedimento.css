@@ -152,20 +152,16 @@ header .cta:hover {
 }
 
 
-.card-media {
-  aspect-ratio: 16/10;
-  background: linear-gradient(135deg, var(--areia-serena), var(--banho-sol));
-  position: relative;
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-.card-media::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(600px 250px at -10% -10%, rgba(255, 255, 255, .8), transparent 60%),
-  radial-gradient(600px 250px at 110% 110%, rgba(255, 255, 255, .7), transparent 60%);
-  opacity: .9;
-}
 
 .card-body {
   padding: 16px;
