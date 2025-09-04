@@ -147,6 +147,11 @@ header .cta:hover {
   transform-style: preserve-3d;
 }
 
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+
 .card-media {
   aspect-ratio: 16/10;
   background: linear-gradient(135deg, var(--areia-serena), var(--banho-sol));
