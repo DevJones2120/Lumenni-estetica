@@ -64,7 +64,6 @@ h1 {
 
     img {
         max-width: 439px;
-        min-width: 439px;
         padding: 2px;
         border-radius: 5px;
     }
@@ -73,13 +72,6 @@ h1 {
 .destaque>img:hover {
     filter: drop-shadow(0 0 1.4rem var(--banhodesol-color));
     transition: 0.9s;
-    transform: matrix3d();
-}
-
-.destaque img {
-    width: 350px;
-    height: auto;
-    border: 1px solid blue;
 }
 
 main {
@@ -101,6 +93,11 @@ main {
     border: 1px solid blue;
     display: flex;
     margin-top: 50px;
+
+        img {
+            border-radius: 8px;
+        }
+
 }
 
 .card p,h2 {
@@ -133,14 +130,15 @@ div.top-icon {
     height: 32px;
     bottom: 20px;
     right: 20px;
-    border: 1px solid #000;
+    border: var(--cacau-acento-color);
+    border-radius: 9px;
     padding: 10px;
     transition-property: transform;
     transition-duration: 4s;
 } 
 
 .top-icon:hover {
-    background-color: rgba(0,0,0,0.4);
+    background-color: var(--areiasserena-color);
     transform: scale(1.2);
     transition-property: transform, background-color;
     transition-duration: 1s, 2s;
