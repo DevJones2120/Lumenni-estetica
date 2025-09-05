@@ -63,8 +63,10 @@ h1 {
     display: flex;
 
     img {
-        max-width: 439px;
-        padding: 2px;
+        flex: 1;
+        max-width: 24.7%;
+        height: auto;
+        padding: 1px;
         border-radius: 5px;
     }
 }
@@ -72,6 +74,7 @@ h1 {
 .destaque>img:hover {
     filter: drop-shadow(0 0 1.4rem var(--banhodesol-color));
     transition: 0.9s;
+    transform: scale(1.05) translateY(-5px);
 }
 
 main {
@@ -107,6 +110,10 @@ main {
 .card:hover {
     background-color: var(--ouropuro-color);
     transition: 1.4s;
+
+    h,p {
+        color: white;
+    }
 }
 
 footer {
