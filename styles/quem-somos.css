@@ -42,6 +42,18 @@ header {
         }
     }
 
+@keyframes header {
+    0% {
+        opacity: to bottom 1;
+    }
+    25% {
+        opacity: to bottom 0.8;
+    }
+    50% {
+        opacity: to bottom 0.5;
+    }
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -59,7 +71,6 @@ h1 {
 
 /*  FOTOS INTRODUÇÃO  */
 .destaque {
-    border: 2px solid red;
     display: flex;
 
     img {
@@ -88,19 +99,16 @@ main {
 }
 
 /* Conteudo Principal */
-.cards {
-    border: 1px solid red;
-}
 
 .card {
-    border: 1px solid blue;
     display: flex;
     margin-top: 50px;
+    border-radius: 8px;
+    
 
         img {
             border-radius: 8px;
         }
-
 }
 
 .card p,h2 {
