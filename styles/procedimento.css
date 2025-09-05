@@ -204,24 +204,8 @@ header .cta:hover {
 }
 
 
-/* RESPONSIVO */
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   .hero-wrap {
-    grid-template-columns: 1fr;
-  }
-  .cta-box {
-    grid-template-columns: 1fr;
-  }
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 620px) {
-  .menu {
-    display: none;
-  }
-  .grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 }
