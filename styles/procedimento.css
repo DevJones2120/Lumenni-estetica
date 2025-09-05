@@ -125,7 +125,6 @@ header .cta:hover {
   color: #fff;
 }
 
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -133,10 +132,9 @@ header .cta:hover {
   margin-top: 2em;
 }
 
-
 .card {
- perspective: 1000px;
- height: 350px; 
+  perspective: 1000px;
+  height: 350px; 
 }
 
 .card-inner {
@@ -150,7 +148,6 @@ header .cta:hover {
 .card:hover .card-inner {
   transform: rotateY(180deg);
 }
-
 
 .card-front,
 .card-back {
@@ -176,22 +173,6 @@ header .cta:hover {
   flex-direction: column;
 }
 
-.card p {
-  margin: 0 0 12px;
-  color: var(--muted);
-  font-size: .98rem;
-}
-
-.pill {
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px dashed rgba(212, 175, 55, .35);
-  font-size: .8rem;
-  color: var(--cacau-intenso);
-  font-weight: 700;
-}
-
 .pill {
   display: inline-block;
   background: var(--banho-sol);
@@ -202,7 +183,6 @@ header .cta:hover {
   font-weight: 600;
   margin-top: auto;
 }
-
 
 @media (max-width: 768px) {
   .hero-wrap {
