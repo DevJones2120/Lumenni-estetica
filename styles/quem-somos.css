@@ -42,18 +42,6 @@ header {
         }
     }
 
-@keyframes header {
-    0% {
-        opacity: to bottom 1;
-    }
-    25% {
-        opacity: to bottom 0.8;
-    }
-    50% {
-        opacity: to bottom 0.5;
-    }
-}
-
 nav a {
     color: white;
     text-decoration: none;
