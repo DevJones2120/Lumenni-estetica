@@ -230,14 +230,24 @@ body {
 }
 
 
+.vetor-division-4 {
+   
+    max-width: 1520px;
+    max-height: 400px;
+    position: relative;
+    bottom: 1056px;
+    z-index: 3;
+
+
+
+}
+
 .sections-cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 100%;
-    
+    top: 101%;
     position: absolute;
-    z-index: 2;
     height: 742px;
     width: 100%;
     background: linear-gradient(to left, var(--cacau-acento-color), var(--cacauintenso-color));
@@ -245,7 +255,7 @@ body {
 }
 
 .card1,.card2,.card3 {
-
+    
     margin-left: 45px;
     width: 300px;
     background-color: none;
@@ -255,7 +265,7 @@ body {
     padding: 20px;
     margin: 20px;
     overflow: hidden;
-    z-index: 0;
+    z-index: 5;
     position: absolute;
 
 
