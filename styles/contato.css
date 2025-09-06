@@ -9,25 +9,30 @@ header {
 
 
 .contato {
-    background-color: #F1D488;
+    background-color: #f1d388b7;
     width: 100%;
     margin: 0;
     padding: 20px 0;
     text-align: center;
 }
+
+.cards {
+    display: flex;
+}
+
 h3 {
-    font-size: 30px;
+    font-size: 50px;
     color: black;
     text-align: center;
     margin: 15px 0;
-    width: 600px;
 }
 
 h2 {
     color: black;
     text-align: center;
     margin: 15px 0;
-    font-size: 70px;
+    font-size: 90px;
+    text-transform: uppercase;
 }
 .car-agen {
     text-align: center;
@@ -36,7 +41,7 @@ h2 {
 }
 
 .btn-agen {
-    background-color: #F1D488;
+    background-color: #f1d388;
     color: black;
     padding: 15px 35px;
     text-align: center;
@@ -48,37 +53,40 @@ h2 {
     border: none;
 }
 .btn-agen:hover {
-    background-color: #BF9861;
+    background-color: #000000;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .formulario {
     background: #EEEADE;
-    margin: 100px 50px;
+    margin:  100px;
     padding: 30px;
     border-radius: 15px;    
-    width: 300px;
-    display: block;
+    width: 500px;
+    height: 400%;
+    display: flex;
+    grid-template-rows: 100px 100px;
     box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .formulario input, .formulario textarea {
-    padding: 5px;
-    margin: 5px 0 20px 0;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    width: 140%;
     border: none;
     background: white;
     border-radius: 5px;
     display: block;
     line-height: 1;
-}
+    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;}
+
 .formulario textarea{
   min-height: 13px;
   resize: vertical;
   
 }
 .btn-enviar{
-  display: block;
   padding: 10px;
   background: black;
   color: white;
@@ -87,40 +95,83 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
+  margin: 10px;
+  width: 40%;
+  height: 40%;
 }
-.redes{
-    background: #CABAA0;
-    text-align: center;
-    padding: 20px ;
-    margin: 300px 200px;
-    border-radius: 15px;
+
+.card-container {
+    max-width: 600px;
+    margin: 40px auto; 
+    padding: 80px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    line-height: 1.6;
     display: block;
+    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
-.h2-redes {
-    color: black;
-    font-size: 40px;
-    margin: 10px 0;
+
+.card-redes h2 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.card-redes p {
+    color: #000000;
+    margin-bottom: 40px;
+    font-size: 20px;
+    padding: 10px;
     text-align: center;
-  
-}
-.h3-redes {
-    color: black;
-    font-size: 15px;
-    margin: 10px;
-    text-align: center;
 }
 
-
-ul.redes-sociais {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.telefone, .email, .localização, .horarios {
+    align-items: flex-start;
+    margin-bottom: 50px;
     display: flex;
-    margin: 0;
-    padding: 0;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
 }
+
+.icone {
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.image{
+    height: 100px;
+    left: 315px;
+    top: 169.4%;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 20px #2c2424; 
+}
+
+.info-text h3 {
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.info-text p {
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 1.4;
+    font-size: 25px;
+    text-align: center;
+}
+
 
 ul li a.fa {
     font-size: 40px;
@@ -156,57 +207,22 @@ ul.car-redes li a:hover{
     box-shadow: -20px 20px 50px rgba(0,0,0,0.5);
 }
 
-.whats-info {
-    background: rgb(0, 0, 0);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin: 50px;
-    width: 300px;
-    border-radius: 15px;
-    font-size: 15px;
-}
-
-.email-info {
-    background: rgb(0, 0, 0);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin: 50px;
-    width: 300px;
-    border-radius: 15px;
-    font-size: 15px;
-}
-
-.endereco-info {
-    background: rgb(0, 0, 0);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin: 50px;
-    width: 300px;
-    border-radius: 15px;
-    font-size: 10px;
-}
-
 .mapa iframe {
-    border: 2px solid black;
     box-shadow: 0 0 20px #2c2424;
-    margin: 100px;
-    display: block;
-    margin-left: auto;
-    width: 500px;
+    width: 1900px;
+    height: 450px;
+    border-radius: 10px;
 }
 
-.localização {
-    background: rgb(0, 0, 0);
-    color: white;
+.loc-card {
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 0;
     margin: 50px;
-    width: 300px;
+    width: 900px;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 40px;
+    background-color: #f1d388b7;
 }
 
 .conteiner {
@@ -266,7 +282,7 @@ ul.car-redes li a:hover{
     text-align: center;
 }
 
-footer{
+footer {
     background-color: #000000;
     font-size: 10px;
     color: #ffffff;
@@ -275,4 +291,3 @@ footer{
     justify-content: space-between;
     text-align: center;
 }
-   
