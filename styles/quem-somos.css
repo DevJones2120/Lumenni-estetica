@@ -3,6 +3,19 @@
     margin: 0px;
 }
 
+/* Media query */
+@media (max-width: 576px) {
+
+    .card {
+        flex-direction: column;
+    }
+
+    .destaque {
+        flex-direction: column;
+
+    }
+}
+
 /*  CABEÇALHO MENU */
 header {
     background: linear-gradient(to left, var(--cacau-acento-color), var(--cacauintenso-color));
@@ -30,7 +43,6 @@ header {
             right: 47.6%;
             top: 50px;
             color: #f1d390;
-
         }
 
         img.txt {
@@ -77,7 +89,7 @@ h1 {
 }
 
 main {
-    background-image: url(/imagens/Union.png);
+    background-image: url(/src/img/Union.png);
     padding-top: 60px;
     padding-bottom: 60px;
     width: 70%;
@@ -110,18 +122,21 @@ main {
     h,p {
         color: white;
     }
+
+    strong {
+        color: black;
+    }
 }
 
 footer {
     padding-top: 50px;
     padding-bottom: 30px;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     background: linear-gradient(to left, var(--cacau-acento-color), var(--cacauintenso-color));
 
-    .copy {
-        background: linear-gradient(to right, var(--cacau-acento-color), var(--cacauintenso-color));
+    a:visited {
+        color: white;
     }
 
 }
