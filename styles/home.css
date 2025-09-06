@@ -145,6 +145,7 @@ body {
     max-width: 100%;
     height: auto;
     display: flex;
+    z-index: 10;
     
 
     img {
@@ -194,7 +195,7 @@ body {
         position: absolute;
         top: 718px;
         left: 50%;
-        z-index: 0;
+        z-index: 9;
         cursor: pointer;
         animation: pular 0.4s infinite alternate;
     
@@ -232,13 +233,17 @@ body {
 
 .vetor-division-4 {
    
-    max-width: 1520px;
-    max-height: 400px;
+
+
+    img {
+    width: 1530px;
+    height: auto;
     position: relative;
-    bottom: 1056px;
-    z-index: 3;
+    bottom: 1355px;
+    z-index: 5;
 
 
+    }
 
 }
 
@@ -334,7 +339,7 @@ body {
 
 .card3 {
     align-items: center;
-    top: 20px;
+    top: 40px;
     width: 350px;
     height: 550px;
 
