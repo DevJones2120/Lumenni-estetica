@@ -113,30 +113,31 @@ h2 {
 
 
 .card-redes h2 {
-    color: #333;
+    color: #000000;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
 .card-redes p {
-    color: #e60000;
+    color: #000000;
     margin-bottom: 40px;
     font-size: 20px;
+    padding: 10px;
+    text-align: center;
 }
 
-.info-tel, .info-email, .info-endereco, .info-horarios {
+.telefone, .email, .localização, .horarios {
     align-items: flex-start;
     margin-bottom: 50px;
     display: flex;
     text-align: left;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.tel-icon, .email-icon, .endereco-icon, .horarios-icon  {
+.icone {
     background-color: black;
-    width: 80px;
-    height: 80px;
     border: 1px solid #ccc;
     border-radius: 50%; 
     display: flex;
@@ -145,19 +146,21 @@ h2 {
     margin-right: 20px;
 }
 
-.tel-icon img, .email-icon img, .endereco-icon img, .horarios-icon img {
-    position: absolute;
-    width: 40px;
+.image{
     height: 100px;
     left: 315px;
     top: 169.4%;
-    
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 20px #2c2424; 
 }
+
 .info-text h3 {
     color: #000000;
     margin-top: 0;
     margin-bottom: 5px;
     font-size: 20px;
+    text-align: center;
 }
 
 .info-text p {
@@ -204,39 +207,6 @@ ul.car-redes li a:hover{
     box-shadow: -20px 20px 50px rgba(0,0,0,0.5);
 }
 
-.whats-info {
-    background: rgb(0, 0, 0);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin: 50px;
-    width: 300px;
-    border-radius: 15px;
-    font-size: 15px;
-}
-
-.email-info {
-    background: rgb(0, 0, 0);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin: 50px;
-    width: 300px;
-    border-radius: 15px;
-    font-size: 15px;
-}
-
-.endereco-info {
-    background: rgb(0, 0, 0);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin: 50px;
-    width: 300px;
-    border-radius: 15px;
-    font-size: 10px;
-}
-
 .mapa iframe {
     border: 2px solid black;
     box-shadow: 0 0 20px #2c2424;
@@ -246,7 +216,7 @@ ul.car-redes li a:hover{
     width: 500px;
 }
 
-.localização {
+.loc-card {
     background: rgb(0, 0, 0);
     color: white;
     text-align: center;
