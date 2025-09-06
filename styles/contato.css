@@ -208,23 +208,21 @@ ul.car-redes li a:hover{
 }
 
 .mapa iframe {
-    border: 2px solid black;
     box-shadow: 0 0 20px #2c2424;
-    margin: 100px;
-    display: block;
-    margin-left: auto;
-    width: 500px;
+    width: 1900px;
+    height: 450px;
+    border-radius: 10px;
 }
 
 .loc-card {
-    background: rgb(0, 0, 0);
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 0;
     margin: 50px;
-    width: 300px;
+    width: 900px;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 40px;
+    background-color: #f1d388b7;
 }
 
 .conteiner {
