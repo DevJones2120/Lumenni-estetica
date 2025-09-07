@@ -3,6 +3,8 @@
     margin: 0px;
 }
 
+@import url(variaveis.css);
+
 /* Media query */
 @media (max-width: 576px) {
 
@@ -17,17 +19,18 @@
 }
 
 /*  CABEÇALHO MENU */
-header {
-    background: linear-gradient(to left, var(--cacau-acento-color), var(--cacauintenso-color));
-    width: 100%;
-    height: 117px;
-    color: white;
-    position: sticky;
-    top: 0px;
-    z-index: 1;
+ header {
+        background: linear-gradient(to left, var(--cacau-acento-color), var(--cacauintenso-color));
+        width: 100%;
+        height: 117px;
+        color: white;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
     }
     
     nav {
+
         display: flex;
         justify-content: end;
         align-items: end;
@@ -43,8 +46,11 @@ header {
             right: 47.6%;
             top: 50px;
             color: #f1d390;
+
         }
 
+
+       
         img.txt {
             width: 100px;
             height: auto;
@@ -52,26 +58,21 @@ header {
             left: 44.8%;
             top: 29px;
         }
+
     }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-h1 {
-    font-family: "Marcellus", Sans-serif;
-    color: var(--cacau-acento-color);
-    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.112);
-    font-size: 60px;
-    font-weight: 100;
-    line-height: 0.9;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      
+    }
 
 /*  FOTOS INTRODUÇÃO  */
 .destaque {
     display: flex;
+    margin-right: -10px;
+    filter: drop-shadow(3px 1px 15px#eba87c);
 
     img {
         flex: 1;
@@ -99,7 +100,6 @@ main {
 }
 
 /* Conteudo Principal */
-
 .card {
     display: flex;
     margin-top: 50px;
