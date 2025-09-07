@@ -145,13 +145,15 @@ body {
     max-width: 100%;
     height: auto;
     display: flex;
+    z-index: 10;
+    
     
 
     img {
         position: absolute;
-        top: -3px;
-        left: 59%;
-        height: 628px;
+        top: -100px;
+        left: 40%;
+        height: 1000px;
         width: auto;
         max-width: 100%;
         transition: all 0.5s ease-in-out; 
@@ -194,7 +196,7 @@ body {
         position: absolute;
         top: 718px;
         left: 50%;
-        z-index: 0;
+        z-index: 9;
         cursor: pointer;
         animation: pular 0.4s infinite alternate;
     
@@ -225,47 +227,79 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 0;
-        
 
-    
+
+}
+
+
+.vetor-division-4 {
+   
+    img {
+
+    width: 1700px;
+    height: auto;
+    right: 40px;
+    position: relative;
+    bottom: 1100px;
+    z-index: 5;
+
+
+    }
+
+
+}
+
+.sections-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 101%;
+    position: absolute;
+    height: 742px;
+    width: 100%;
+    background: linear-gradient(to left, var(--cacau-acento-color), var(--cacauintenso-color));
 
 }
 
 .card1,.card2,.card3 {
+    
     margin-left: 45px;
     width: 300px;
     background-color: none;
-    border: 2px solid #824924;
+    border: 2px solid #ffffff;
     border-radius: 10px;
     height: 400px;
     padding: 20px;
     margin: 20px;
     overflow: hidden;
-    z-index: 0;
+    z-index: 5;
     position: absolute;
 
-       div {
-           background-color: #824924;
-                border-radius: 50%;
-                width: 500px;
-                height: 500px;
-                margin-top: 350px;
-                right: 100px;
-                align-items: center;
-                justify-content: center;
-                position: relative;
-                z-index: -1;
 
-            }
+    img {
+        width: 100%;
+        position: absolute;
+        height: auto;  
+        left: 0;
+        top: -30px;
+        bottom: 0;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+     }
+
+
+
 
              button {
         
         position: absolute;
-        background-color: #ffffff00;
+        z-index: 1;
+        background-color: #ffffff;
         padding: 12px 24px;        
         border-radius: 50px;
-        border: 2px solid #ffffff;
-        color: #ffffff;
+        border: 2px solid #824924;
+        color: #824924;
         cursor: pointer;
         font-family: "Manrope", Sans-serif;
         font-size: 16px;
@@ -282,8 +316,8 @@ body {
 
     button:hover {
 
-        background-color: #ffffff;
-        color: #824924;
+        background-color: #824924;
+        color: #ffffff;
         border: 2px solid none;
         
     }
@@ -294,15 +328,104 @@ body {
 }
 
 
+
+.card1 {
+    left: 5%;
+    top: 120px;
+}
+
 .card2 {
-    margin-left: 50%;
+    right: 5%;
+    top: 120px;
 }
 
 .card3 {
-    margin-right: 50%;
+    align-items: center;
+    top: 40px;
+    width: 350px;
+    height: 550px;
+
+    
+             button {
+        
+        position: absolute;
+        z-index: 1;
+        background-color: #ffffff;
+        padding: 12px 24px;        
+        border-radius: 50px;
+        border: 2px solid #824924;
+        color: #824924;
+        cursor: pointer;
+        font-family: "Manrope", Sans-serif;
+        font-size: 16px;
+        padding: 12px 24px;
+        bottom: 10px;
+        left: 125px;
+        transition: 1s;
+
+        
+        
+
+    }
+
+
+    button:hover {
+
+        background-color: #824924;
+        color: #ffffff;
+        border: 2px solid none;
+        
+    }
 }
 
 
+
+
+
+#circle-vetor {
+
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    top: 80%;
+    left: -80px;
+    position: absolute;
+    overflow: hidden;
+
+
+
+}
+
+#circle-vetor0 {
+
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    top: 84%;
+    right: -55px;
+    position: absolute;
+    overflow: hidden;
+
+    
+
+}
+
+
+
+
+.banners {
+
+    img {
+        height: auto;
+        width: 1520px;
+        position: absolute;
+        top: 1485px;
+        z-index: 1;
+    }
+
+}
 
 
 
