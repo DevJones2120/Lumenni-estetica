@@ -23,7 +23,7 @@ body {
     header {
       background: linear-gradient(to left, var(--cacau-acento-color), var(--cacauintenso-color));
       width: 100%;
-      height: 117px;
+      height: 80px;
       color: white;
     
     }
@@ -31,13 +31,13 @@ body {
     nav {
 
         display: flex;
-        justify-content: end;
-        align-items: end;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto;
-        padding-top: 50px;
-        margin-right: 50px;
+        padding-top: 20px;
+        margin-right: 0px;
 
-        #logo {
+        /* #logo {
             font-size: 22px;
             font-weight: bold;
             text-transform: uppercase;
@@ -46,11 +46,11 @@ body {
             top: 50px;
             color: #f1d390;
 
-        }
+        } */
 
 
        
-        img.txt {
+        img {
             width: 100px;
             height: auto;
             position: absolute;
@@ -61,12 +61,37 @@ body {
     }
 
     nav a {
-      color: white;
+      color: rgb(255, 255, 255);
+      font-family: 'Manrope', Sans-serif;
+      border-radius: 50px;
+      font-size: 15px;
+      font-weight: 100;
       text-decoration: none;
-      margin: 0 15px;
+      
+      padding: 8px 15px 8px 15px;
+      margin: 0 5px;
+      transition: 1s;
+        
       
     }
 
+    nav a:hover {
+      transition: 1s;
+      background-color: #ffffff;
+      color: #824924;
+      font-weight: 600;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-decoration: underline wavy #824924 2px;
+      padding: 10px 20px 10px 20px;
+      border: 1px solid white;
+      
+
+   
+    }
+
+
+ 
 
    
 
