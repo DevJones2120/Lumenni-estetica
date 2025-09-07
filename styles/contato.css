@@ -29,7 +29,8 @@ header {
     margin: 0;
     padding: 20px 0;
     text-align: center;
-    he
+    letter-spacing: 6px;
+    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .cards {
