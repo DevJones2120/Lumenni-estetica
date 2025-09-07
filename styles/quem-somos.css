@@ -78,6 +78,18 @@ body {
     display: flex;
     margin-right: -10px;
     filter: drop-shadow(3px 1px 15px#eba87c);
+    width: 1020px;
+
+
+
+            .last {
+
+    
+            max-width: 30%;
+            height: auto;
+        }
+
+
 
     img {
         flex: 1;
@@ -85,6 +97,9 @@ body {
         height: auto;
         padding: 1px;
         border-radius: 5px;
+
+
+
     }
 }
 
@@ -167,3 +182,4 @@ div.top-icon {
     transform: scale(1.2);
 
 }
+
