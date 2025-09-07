@@ -3,7 +3,8 @@
     margin: 0px;
 }
 
-@import url(variaveis.css);
+/* @import url(variaveis.css); */
+
 
 /* Media query */
 @media (max-width: 576px) {
@@ -16,6 +17,10 @@
         flex-direction: column;
 
     }
+}
+
+body {
+    font-family: 'Inter', sans-serif;
 }
 
 /*  CABEÇALHO MENU */
@@ -156,8 +161,9 @@ div.top-icon {
 } 
 
 .top-icon:hover {
-    background-color: var(--areiasserena-color);
+    background: linear-gradient(to right, var(--banhodesol-color), var(--ouropuro-color));
+    filter: drop-shadow(3px 1px 15px var(--ouropuro-color));
+    opacity: 0.9;
     transform: scale(1.2);
-    transition-property: transform, background-color;
-    transition-duration: 1s, 2s;
+
 }
