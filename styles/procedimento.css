@@ -1,11 +1,17 @@
 :root {
-  --luz-marfi: #F8F6F0;
-  --areia-serena: #E6DAC8;
-  --banho-sol: #F4C95D;
-  --ouro-puro: #D4AF37;
-  --cacau-intenso: #4B2E2E;
-  --text-dark: #333;
-  --text-light: #fff;
+  --cacauintenso-color: #4E3B31;
+  --cacau-claro-color: #D7C9C2;
+  --cacau-escuro-color: #3B2A25;
+  --cacau-acento-color: #A65E2E;
+  --cacau-fundo-color: #F9F5F2;
+  --ouropuro-color: #BF9861;
+  --banhodesol-color: #F1DA88;
+  --areiasserena-color: #cabaa0;
+  --luzdemarfim-color: #eeead0;
+  --background-color: #f5f4f0;
+
+  --texto-escuro: #4B2E2E;
+  --texto-claro: #fff;
 }
 
 * {
@@ -16,13 +22,13 @@
 }
 
 body {
-  background-color: var(--luz-marfi);
-  color: var(--text-dark);
+  background-color: var(--luzdemarfim-color);
+  color: var(--texto-escuro);
   line-height: 1.6;
 }
 
 header {
-  background: var(--areia-serena);
+  background: var(--areiasserena-color);
   padding: 1em 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -42,78 +48,112 @@ header .brand {
   gap: 0.5em;
   font-weight: 700;
   font-size: 1.3em;
-  color: var(--cacau-intenso);
+  color: var(--cacauintenso-color);
 }
 
 header .menu-navegacao a {
   margin: 0 1em;
   text-decoration: none;
-  color: var(--cacau-intenso);
+  color: var(--cacauintenso-color);
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 header .menu-navegacao a:hover {
-  color: var(--banho-sol);
+  color: var(--banhodesol-color);
 }
 
 header .botao-acao {
   padding: 0.5em 1em;
-  background: var(--banho-sol);
-  color: var(--text-light);
+  background: var(--banhodesol-color);
+  color: var(--texto-claro);
   text-decoration: none;
   border-radius: 5px;
   transition: background 0.3s ease;
 }
 
 header .botao-acao:hover {
-  background: var(--ouro-puro);
+  background: var(--ouropuro-color);
 }
 
 .secao-principal {
-  background: var(--luz-marfi);
-  padding: 3em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--luzdemarfim-color);
+  min-height: 90vh;
+  padding: 5em 2em;
+  color: var(--texto-escuro);
 }
 
-.etiqueta {
+.secao-principal .hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.secao-principal .etiqueta {
   display: inline-block;
-  background: var(--banho-sol);
-  color: var(--text-light);
-  padding: 0.3em 0.7em;
-  border-radius: 20px;
+  background: var(--banhodesol-color);
+  color: var(--texto-claro);
+  padding: 0.4em 1em;
+  border-radius: 25px;
   font-weight: 600;
   margin-bottom: 0.5em;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
 }
 
 .secao-principal h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
+  font-size: 3rem;
+  margin: 0.5em 0;
 }
 
 .secao-principal p {
-  margin-bottom: 1em;
-  font-size: 1.1em;
+  font-size: 1.1rem;
+  max-width: 550px;
+  margin-bottom: 1.5em;
+  color: #5a4b42;
 }
 
-.cta-actions .btn {
-  text-decoration: none;
+.secao-principal .cta-actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.secao-principal .cta-actions .btn {
   padding: 0.7em 1.5em;
-  border-radius: 5px;
+  border-radius: 30px;
   font-weight: 600;
-  margin-right: 1em;
-  border: none;
+  text-decoration: none;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
+  border: none;
 }
 
-.cta-actions .primary {
-  background: var(--banho-sol);
-  color: var(--text-light);
+.secao-principal .cta-actions .primary {
+  background: var(--banhodesol-color);
+  color: var(--texto-claro);
 }
 
-.cta-actions .btn:hover {
-  background: var(--ouro-puro);
-  color: #fff;
+.secao-principal .cta-actions .btn:hover {
+  background: var(--ouropuro-color);
+  color: var(--texto-claro);
+}
+
+.secao-principal .hero-visual {
+  background-image: url('https://i.pinimg.com/736x/3a/8a/e1/3a8ae10f969d1708c8be0bca72a6b9e3.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  height: 500px; /* Ajuste conforme necessário */
+  width: 34%;
 }
 
 .grade {
@@ -171,13 +211,30 @@ header .botao-acao:hover {
 
 .etiqueta-tempo {
   display: inline-block;
-  background: var(--banho-sol);
+  background: var(--banhodesol-color);
   color: #fff;
   padding: 0.3em 0.7em;
   border-radius: 20px;
   font-size: 0.85em;
   font-weight: 600;
   margin-top: auto;
+}
+
+@media (max-width: 900px) {
+  .secao-principal .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .secao-principal .hero-visual {
+    width: 80%;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  .secao-principal h1 {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 768px) {
