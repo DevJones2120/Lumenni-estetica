@@ -75,15 +75,6 @@ header .botao-acao:hover {
   padding: 3em 1em;
 }
 
-.hero-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2em;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .etiqueta {
   display: inline-block;
   background: var(--banho-sol);
