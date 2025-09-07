@@ -20,24 +20,12 @@ header {
 }
 
 .destaque {
-    display: grid;
-    grid-template-columns: 2fr .5fr .5fr;
-    gap: 2px;
-    transition: grid-template-columns .3;
+    display: flex;
 }
 
-.destaque:has(.left:hover) {
-    grid-template-columns: 2fr .5fr .5fr;
+.destaque:hover {
+    
 }
-
-.destaque:has(.center:hover) {
-    grid-template-columns: 5fr .2fr .5fr;
-}
-
-.destaque:has(.left:hover) {
-    grid-template-columns: 5fr .5fr .2fr;
-}
-
 
 main {
     padding-top: 60px;
