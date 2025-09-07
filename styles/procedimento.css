@@ -45,7 +45,7 @@ header .brand {
   color: var(--cacau-intenso);
 }
 
-header .menu a {
+header .menu-navegacao a {
   margin: 0 1em;
   text-decoration: none;
   color: var(--cacau-intenso);
@@ -53,11 +53,11 @@ header .menu a {
   transition: color 0.3s ease;
 }
 
-header .menu a:hover {
+header .menu-navegacao a:hover {
   color: var(--banho-sol);
 }
 
-header .cta {
+header .botao-acao {
   padding: 0.5em 1em;
   background: var(--banho-sol);
   color: var(--text-light);
@@ -66,16 +66,16 @@ header .cta {
   transition: background 0.3s ease;
 }
 
-header .cta:hover {
+header .botao-acao:hover {
   background: var(--ouro-puro);
 }
 
-.hero {
+.secao-principal {
   background: var(--luz-marfi);
   padding: 3em 1em;
 }
 
-.hero-wrap {
+.hero-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -84,7 +84,7 @@ header .cta:hover {
   margin: 0 auto;
 }
 
-.hero .badge {
+.etiqueta {
   display: inline-block;
   background: var(--banho-sol);
   color: var(--text-light);
@@ -94,17 +94,17 @@ header .cta:hover {
   margin-bottom: 0.5em;
 }
 
-.hero h1 {
+.secao-principal h1 {
   font-size: 2.5em;
   margin-bottom: 0.5em;
 }
 
-.hero p {
+.secao-principal p {
   margin-bottom: 1em;
   font-size: 1.1em;
 }
 
-.hero .cta-actions .btn {
+.cta-actions .btn {
   text-decoration: none;
   padding: 0.7em 1.5em;
   border-radius: 5px;
@@ -115,29 +115,29 @@ header .cta:hover {
   transition: background 0.3s ease;
 }
 
-.hero .cta-actions .primary {
+.cta-actions .primary {
   background: var(--banho-sol);
   color: var(--text-light);
 }
 
-.hero .cta-actions .btn:hover {
+.cta-actions .btn:hover {
   background: var(--ouro-puro);
   color: #fff;
 }
 
-.grid {
+.grade {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5em;
   margin-top: 2em;
 }
 
-.card {
+.cartao {
   perspective: 1000px;
   height: 350px; 
 }
 
-.card-inner {
+.cartao-interno {
   position: relative;
   width: 100%;
   height: 100%;
@@ -145,12 +145,12 @@ header .cta:hover {
   transform-style: preserve-3d;
 }
 
-.card:hover .card-inner {
+.cartao:hover .cartao-interno {
   transform: rotateY(180deg);
 }
 
-.card-front,
-.card-back {
+.cartao-frente,
+.cartao-verso {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -159,13 +159,13 @@ header .cta:hover {
   overflow: hidden;
 }
 
-.card-front img {
+.cartao-frente img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.card-back {
+.cartao-verso {
   background: #fff;
   transform: rotateY(180deg);
   padding: 1em;
@@ -173,7 +173,12 @@ header .cta:hover {
   flex-direction: column;
 }
 
-.pill {
+.corpo-cartao {
+  display: flex;
+  flex-direction: column;
+}
+
+.etiqueta-tempo {
   display: inline-block;
   background: var(--banho-sol);
   color: #fff;
@@ -185,7 +190,7 @@ header .cta:hover {
 }
 
 @media (max-width: 768px) {
-  .hero-wrap {
+  .hero-container {
     flex-direction: column;
   }
 }
