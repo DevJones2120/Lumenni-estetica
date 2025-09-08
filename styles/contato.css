@@ -148,22 +148,23 @@ h2 {
 }
 
 .telefone, .email, .localização, .horarios {
-    align-items: flex-start;
+    align-items: stretch;
     margin-bottom: 50px;
     display: flex;
     text-align: left;
     width: 80%;
-    margin: 0 auto;
 }
 
 .icone {
-    background-color: black;
-    border: 1px solid #ccc;
+    background-color: var(--cacau-escuro-color);
     border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 10px;
+    width: 200px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .image{
@@ -172,7 +173,6 @@ h2 {
     top: 169.4%;
     border-radius: 50%;
     padding: 10px;
-    box-shadow: 0 0 20px #2c2424; 
 }
 
 .info-text h3 {
@@ -188,7 +188,7 @@ h2 {
     margin-top: 0;
     margin-bottom: 5px;
     line-height: 1.4;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
 }
 
