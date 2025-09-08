@@ -160,7 +160,8 @@ nav a:hover {
 .division-vetor1 {
     width: 1300px;
     height: 1100px;
-    background-color: var(--cacau-acento-color);
+    background-color: #c2865f;
+    /* background-color: var(--cacau-acento-color); */
     margin:0;
     padding: 0;
     position: relative;
@@ -216,7 +217,7 @@ nav a:hover {
 .sections-cards {
     height: 750px;
     width: 100%;
-    background: linear-gradient(to top, var(--cacau-acento-color), var(--cacau-acento2-color));    
+    background: linear-gradient(to top, var(--cacau-acento-color), #eeead0);
     display: flex;
     justify-content: center;
     align-items: center;    

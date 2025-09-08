@@ -1,3 +1,5 @@
+@import url(variaveis.css);
+
 :root {
   --cacauintenso-color: #4E3B31;
   --cacau-claro-color: #D7C9C2;
@@ -13,6 +15,8 @@
   --texto-escuro: #4B2E2E;
   --texto-claro: #fff;
 }
+
+
 
 html {
   scroll-behavior: smooth;
@@ -31,6 +35,62 @@ body {
   color: var(--texto-escuro);
   line-height: 1.6;
 }
+
+
+/*************************
+**** AREA MENU ****
+**************************/
+
+header {
+    background-color: #b8784e;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    position: relative;
+    z-index: 5;
+}
+
+nav {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 32.6%;
+
+}
+
+nav a {
+    background: linear-gradient(to left, var(--cacau-acento-color), var(--cacauintenso-color));
+    color: white;
+    border: #ffffff 2px solid;
+    padding: 6px 12px;
+    border-radius:60px;
+    margin-left: 10px;
+    font-family: 'Manrope', Sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-decoration: none;
+    transition: 2s linear;
+    transition: 1s;
+
+}
+
+nav a:hover {
+    transition: 1s;
+    background: #ffffff;
+    border-radius: 50px;
+    border: #824924 4px solid;
+    color: #824924;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 12px 24px;
+
+}
+
+/*********FINAL MENU****************/
+
+
 
 
 
