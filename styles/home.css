@@ -160,13 +160,13 @@ nav a:hover {
 .division-vetor1 {
     width: 1300px;
     height: 1100px;
-    background-color: #c2865f;
+    background-color: #b8784e;
     /* background-color: var(--cacau-acento-color); */
     margin:0;
     padding: 0;
     position: relative;
     top: 190px;
-    left: 50%;
+    left: 52.2%;
     z-index: -1;
     transform: rotate(143.5deg);
 }
