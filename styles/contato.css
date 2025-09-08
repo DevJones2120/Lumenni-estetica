@@ -275,7 +275,7 @@ ul.car-redes li a:hover{
     height: 60px;
     background-image: url('/src/img/user.png');
     background-size: cover;
-    background-position: center;
+    background-position: left;
     border-radius: 50%;
     margin-right: 15px;
 }
@@ -310,6 +310,41 @@ ul.car-redes li a:hover{
     margin: 0;
     text-align: center;
 }
+
+.linha-rolagem {
+    background-color: var(--banhodesol-color); 
+    color: var(--cacauintenso-color); 
+    display: flex; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+    padding: 15px 0; 
+}
+
+.linha-rolagem::-webkit-scrollbar {
+    display: none;
+}
+
+.item-1 {
+    font-size: 1.2rem;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.item-1 + .item-2::before {
+    content: '*'; 
+    font-size: 1.5rem;
+    position: absolute;
+    left: -10px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.item-1:first-child::before {
+    content: none;
+}
+
 
 footer {
     background-color: #000000;
