@@ -23,89 +23,96 @@ body {
     header {
       background: linear-gradient(to left, var(--cacau-acento-color), var(--cacauintenso-color));
       width: 100%;
-      height: 80px;
-      color: white;
-    
+      height: 65px;
+      display: flex;
+      position: relative;
+      z-index: 5;
     }
+
     
     nav {
+        position: relative;
+        z-index: 5;
+        width: 100%;
+        margin-top: 10px;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        padding-top: 20px;
-        margin-right: 0px;
-
-        /* #logo {
-            font-size: 22px;
-            font-weight: bold;
-            text-transform: uppercase;
-            position: absolute;
-            right: 47.6%;
-            top: 50px;
-            color: #f1d390;
-
-        } */
-
-
-       
-        img {
-            width: 100px;
-            height: auto;
-            position: absolute;
-            left: 44.8%;
-            top: 29px;
-        }
+        margin-left: 30%;
 
     }
 
     nav a {
-      color: rgb(255, 255, 255);
+      color: #ffffff;
+      
+      border: #ffffff 1px solid;
+      padding: 6px 12px;
+      border-radius:50px;
+      margin-left: 10px;
+
+
       font-family: 'Manrope', Sans-serif;
-      border-radius: 50px;
-      font-size: 15px;
+      font-size: 17px;
+      text-transform: uppercase;
       font-weight: 100;
       text-decoration: none;
-      
-      padding: 8px 15px 8px 15px;
-      margin: 0 5px;
-      transition: 1s;
-        
-      
+
+
+     transition: 2s linear;
+     transition: 1s;
+
     }
 
     nav a:hover {
       transition: 1s;
       background-color: #ffffff;
+      border-radius: 50px;
       color: #824924;
-      font-weight: 600;
-      text-transform: uppercase;
-      cursor: pointer;
-      text-decoration: underline wavy #824924 2px;
-      padding: 10px 20px 10px 20px;
-      border: 1px solid white;
+      font-weight: bolder;
+      font-size: 18px;
+      padding: 12px 24px;
       
 
-   
+
     }
 
 
- 
-
-   
-
 /*************************
-**** AREA DAS SECTIONS ****
+**** AREA 1ª SEÇÃO ****
 **************************/
 
 .container-background {
     
     width: 100%;
-    height: 625px;
+    height: 720px;
     position: absolute;
     z-index: 0;
+    overflow: hidden;
       
+}
+
+
+.background-image {
+    opacity: 20%;
+    filter: blur(0);
+    width: 100%;
+    height: 720px;
+}
+
+.img-drawer {
+
+    position: relative;
+    z-index: 10;
+    bottom: 720px;
+    left: 60%;
+    height: 900px;
+    width: auto;
+    max-width: 100%;
+    transition: all 0.5s ease-in-out; 
+
+    &:hover {
+
+    transform: scale(1.05);
+
+    }
 }
 
 
@@ -119,85 +126,46 @@ body {
     h1 {
         font-family: "Marcellus", Sans-serif;
         color: var(--cacau-acento-color);
-        text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.112);
+        text-shadow: 0px 2px 4px rgb(176, 108, 5);
         font-size: 60px;
         font-weight: 100;
         line-height: 0.9;
     }
 
-    p {
+    p,button,a {
         font-family: "Manrope", Sans-serif;
+        text-decoration: none;
+        a {
+            color: white;
+        }
+
     }
 
     button {
         margin-top: 10px;
-        font-family: "Manrope", Sans-serif;
-        font-weight: 100;
-        font-size: 18px;
+        font-weight: 00;
+        font-size: 20px;
         padding: 12px 24px;
         border: none;
-        border-radius: 5px;
+        border-radius: 23px;
         background-color: var(--cacau-acento-color);
         cursor: pointer;
         transition: background-color 0.3s ease;
         transition: 1s;
 
-        a {
-            color: white;
-            text-decoration: none;
-            font-family: "Manrope", Sans-serif;
-        }
     }
 
     button:hover {
-        background-color: #824924;
+        background-color: var(--cacau-claro-acento-color);
         transform: translateY(-10px);
     }
 }
 
 
-.background-image {
-    opacity: 20%;
-    filter: blur(0);
-}
-
-
-
-
-
-.img-drawer {
-    width: 100px;
-    max-width: 100%;
-    height: auto;
-    display: flex;
-    z-index: 10;
-    
-    
-
-    img {
-        position: absolute;
-        top: -28px;
-        left: 55%;
-        height: 800px;
-        width: auto;
-        max-width: 100%;
-        transition: all 0.5s ease-in-out; 
-
-        &:hover {
-             transform: scale(1.05);
-        }
-
-    }
-}
-
-
-
-
-
 
 .division-vetor1 {
     width: 1300px;
-    height: 880px;
+    height: 1100px;
     background-color: var(--cacau-acento-color);
     margin:0;
     padding: 0;
@@ -206,29 +174,26 @@ body {
     left: 50%;
     z-index: -1;
     transform: rotate(143.5deg);
-    
 }
 
-.division-vetor2 {
-    
-    img {
-        width: 25px;
-        height: 20px;
-        background-color: #ffffff;
-        border-radius: 10px 10px 50px 50px;
-        margin:0;
-        padding: 0;
-        position: absolute;
-        top: 718px;
-        left: 50%;
-        z-index: 9;
-        cursor: pointer;
-        animation: pular 0.4s infinite alternate;
-    
-    }
+.division-vetor2>a>img {
+
+    width: 25px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 10px 10px 50px 50px;
+    margin:0;
+    padding: 0;
+    position: absolute;
+    top: 718px;
+    left: 50%;
+    z-index: 9;
+    cursor: pointer;
+    animation: pular 0.4s infinite alternate;
+
 }
 
- @keyframes pular {
+@keyframes pular {
   0% {
     transform: translateY(0);
   }
@@ -238,51 +203,31 @@ body {
 }
 
 
+.vetor-division-3>img {
 
-.division-vetor3 {
-
-    background-color: #ffffff;
-    width: 100%;
-    height: 800px;
-    position: relative;
-    display: flex;
-    top: 0%;
-    bottom: 255px;
-    left: 0;
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
-
-
-}
-
-
-.vetor-division-4 {
-   
-    img {
-
-    width: 1700px;
+    width: 1610px;
     height: auto;
-    right: 40px;
+    right: 0px;
+    left: -40px;
     position: relative;
-    bottom: 1100px;
+    bottom: 455px;
     z-index: 5;
 
-
-    }
-
-
 }
 
+
 .sections-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 101%;
-    position: absolute;
     height: 742px;
     width: 100%;
     background: linear-gradient(to left, var(--cacau-acento-color), var(--cacauintenso-color));
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    top: 100%;
+
 
 }
 
