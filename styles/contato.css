@@ -83,6 +83,8 @@ h2 {
     box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
+
+
 .formulario {
     background: #EEEADE;
     margin:  50px;
@@ -129,13 +131,16 @@ h2 {
   color: white;
   box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
+
 .card-container {
-    max-width: 400px;
-    margin: 40px;
-    padding: 10px;
+    max-width: 650px;
+    height: 650px;
+    margin: 0px;
+    padding: 0px;
     border-radius: 10px;
-    line-height: 1.6;
+    line-height: 1.5;
     display: block;
+    background-color: var(--banhodesol-color);
 }
 
 
@@ -168,11 +173,10 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 40px;
+    margin-left: 100px;
     width: 70px;
     height: 70px;
-    margin: 0%;
     box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
@@ -187,8 +191,8 @@ h2 {
 .info-text h3 {
     color: #000000;
     margin: 0;
-    font-size: 15px;
-    text-align: center;
+    font-size: 20px;
+    text-align: left;
 }
 
 .info-text p {
@@ -197,7 +201,7 @@ h2 {
     padding: 0;
     line-height: 1.4;
     font-size: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 
