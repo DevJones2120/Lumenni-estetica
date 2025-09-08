@@ -32,54 +32,7 @@ body {
   line-height: 1.6;
 }
 
-header {
-  background: var(--areiasserena-color);
-  padding: 1em 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
 
-header .container.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1em;
-}
-
-header .brand {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  font-weight: 700;
-  font-size: 1.3em;
-  color: var(--cacauintenso-color);
-}
-
-header .menu-navegacao a {
-  margin: 0 1em;
-  text-decoration: none;
-  color: var(--cacauintenso-color);
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-header .menu-navegacao a:hover {
-  color: var(--banhodesol-color);
-}
-
-header .botao-acao {
-  padding: 0.5em 1em;
-  background: var(--banhodesol-color);
-  color: var(--texto-claro);
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
-
-header .botao-acao:hover {
-  background: var(--ouropuro-color);
-}
 
 .secao-principal {
   display: flex;
