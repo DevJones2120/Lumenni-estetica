@@ -75,7 +75,7 @@ nav>img {
     display: flex;
     filter: drop-shadow(3px 1px 15px#eba87c);
     width: 100%;
-
+    
     img {
         flex: 1;
         max-width: 24.7%;
@@ -85,7 +85,7 @@ nav>img {
     }
 
     :nth-child(4) {
-        max-width: 30%;
+        max-width: 28%;
         height: auto;
     }
 
@@ -208,7 +208,7 @@ div.top-icon {
 } 
 
 .top-icon:hover {
-    background: linear-gradient(to right, var(--banhodesol-color), var(--ouropuro-color));
+    background: linear-gradient(to right, var(--cacau-light-color), var(--cacau-claro-acento-color));
     filter: drop-shadow(3px 1px 15px var(--ouropuro-color));
     opacity: 0.9;
     transform: scale(1.2);
