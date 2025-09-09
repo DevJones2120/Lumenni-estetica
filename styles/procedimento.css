@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  background: linear-gradient(to top, var(--cacau-acento-color), #eeead0);
+  background: var(--luzdemarfim-color);
   color: var(--texto-escuro);
   line-height: 1.6;
   margin: 0;
@@ -177,6 +177,7 @@ nav a:hover {
 
 .cartao {
   perspective: 1000px;
+  background: linear-gradient(to top, var(--cacau-acento-color), #eeead0);
   height: 350px;
 }
 
