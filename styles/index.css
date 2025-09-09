@@ -87,7 +87,7 @@ nav>img {
 .container-background {
     
     width: 100%;
-    height: 720px;
+    height: 1200px;
     position: absolute;
     z-index: 0;
     overflow: hidden;
@@ -99,16 +99,16 @@ nav>img {
     opacity: 20%;
     filter: blur(0);
     width: 100%;
-    height: 720px;
+    height: 880px;
 }
 
 .img-drawer {
 
     position: relative;
     z-index: 10;
-    bottom: 720px;
-    left: 60%;
-    height: 900px;
+    bottom: 820px;
+    left: 55%;
+    height: 1200px;
     width: auto;
     max-width: 100%;
     transition: all 0.5s ease-in-out; 
@@ -174,15 +174,16 @@ nav>img {
 }
 
 .division-vetor1 {
-    width: 1300px;
-    height: 1100px;
+    width: 1800px;
+    height: 1800px;
     background-color: #b8784e;
     /* background-color: var(--cacau-acento-color); */
+    overflow: hidden;
     margin:0;
     padding: 0;
     position: relative;
     top: 190px;
-    left: 52.2%;
+    left: 55%;
     z-index: -1;
     transform: rotate(143.5deg);
 }
@@ -196,7 +197,7 @@ nav>img {
     margin:0;
     padding: 0;
     position: absolute;
-    top: 718px;
+    top: 900px;
     left: 50%;
     z-index: 9;
     cursor: pointer;
@@ -216,12 +217,12 @@ nav>img {
 
 .vetor-division-3>img {
 
-    width: 1610px;
+    width: 2100px;
     height: auto;
     right: 0px;
-    left: -40px;
+    left: -60px;
     position: relative;
-    bottom: 455px;
+    bottom: 980px;
     z-index: 5;
 
 }
@@ -231,7 +232,7 @@ nav>img {
 **************************/
 
 .sections-cards {
-    height: 750px;
+    height: 1100px;
     width: 100%;
     background: linear-gradient(to top, var(--cacau-acento-color), #eeead0);
     display: flex;
@@ -250,7 +251,7 @@ h2 {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--marrom-claro-color);
-    text-shadow: 0px 2px 2px rgba(250, 250, 250, 0.59);
+    text-shadow: 0px 2px 2px rgba(250, 250, 250, 0.74);
     font-size: 40px;
     font-weight: bolder;
     line-height: 1.0;
@@ -263,8 +264,8 @@ h2 {
 .card {
     
 
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     border: 3px solid #ffffff;
     border-radius: 25px;  
     padding: 20px;
@@ -273,6 +274,7 @@ h2 {
     overflow: hidden;
     z-index: 5;
     transition: 1s;
+    margin-top: 120px;
 
 }
 
@@ -291,7 +293,7 @@ h2 {
     cursor: pointer;
     padding: 12px 24px;
     bottom: 10px;
-    left: 100px;
+    left: 145px;
     transition: 1s;
     color: white;
 
@@ -345,10 +347,10 @@ h2 {
 
 .card3 {
     top: 40px;
-    width: 350px;
-    height: 550px;
+    width: 450px;
+    height: 650px;
     button {
-    left: 125px;
+    left: 175px;
 
     }
 }
@@ -356,10 +358,10 @@ h2 {
 #circle-vetor {
     background-color: #ffffff;
     border-radius: 50%;
-    width: 500px;
-    height: 500px;
+    width: 650px;
+    height: 650px;
     top: 80%;
-    left: -80px;
+    left: -105px;
     position: absolute;
     overflow: hidden;
 
@@ -368,10 +370,10 @@ h2 {
 #circle-vetor0 {
     background-color: #ffffff;
     border-radius: 50%;
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
     top: 84%;
-    right: -55px;
+    right: -150px;
     position: absolute;
     overflow: hidden;
 
@@ -390,7 +392,7 @@ footer {
     z-index: 0;
     width: 100%;
     height: 60px;
-    top: 200%;
+    top: 210%;
 
     p {
         font-family: "Manrope", Sans-serif;
