@@ -244,20 +244,24 @@ ul.car-redes li a:hover{
 
 .mapa iframe {
     box-shadow: 0 0 20px #2c2424;
-    width: 1900px;
+    width: 1335px;
     height: 450px;
-    border-radius: 10px;
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 50px;
+
 }
 
 .loc-card {
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 0;
-    margin: 20px;
-    width: 1000px;
-    border-radius: 15px;
+    margin: 0px;
+    margin-top: 150px;
+    margin-bottom: 50px;
     font-size: 40px;
     justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     background-color: var(--banhodesol-color);
 }
 
@@ -267,24 +271,11 @@ ul.car-redes li a:hover{
     padding: 20px 30px;
     border-radius: 15px; 
     max-width: 450px;
-    margin: 50px auto; 
+    margin: 100px auto; 
     transform: rotate(-5deg);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.card-feedback {
-    display: flex;
-    align-items: center; 
-    margin-bottom: 15px;
-}
-
-.user {
-    width: 60px;
-    height: 60px;
-    background-color: #ffffff; 
-    border-radius: 50%;
-    margin-right: 15px;
-}
 .user-image {
     width: 60px;
     height: 60px;
@@ -292,36 +283,49 @@ ul.car-redes li a:hover{
     background-size: cover;
     background-position: left;
     border-radius: 50%;
-    margin-right: 15px;
-}
-
-.feed {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: bold;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .user-name {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-}
+    font-size: 40px;
+    color: #000000;
+    margin-left: 10px;
+    }
 
 .avaliacao {
     color: #f7b731; 
+    font-size: 100px;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    margin-bottom: 0px;
+}
+.star {
+    color: #f7b731; 
+    font-size: 1.2rem;
+    margin-right: 2px;
+    
+}
+.star- {
+    color: #d6c8c8; 
     font-size: 1.2rem;
     margin-right: 2px;
 }
-
-.periodo {
+.ponto {
     color: #f0f0f0;
-    font-size: 0.8rem;
-    margin-left: 10px;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+
 }
 
-.text {
+.texto {
     font-size: 1rem;
     line-height: 1.5;
+    margin-top: 100px;
     margin: 0;
     text-align: center;
 }
