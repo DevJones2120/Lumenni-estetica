@@ -190,7 +190,7 @@ nav>img {
   width: 34%;
 }
 
-   /*** flip card animação visual que faz o card virar ***/
+   /*** flip animação visual dos elementos para fazer o card virar ***/
 
 .grid {
   display: grid;
