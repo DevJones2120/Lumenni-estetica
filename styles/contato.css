@@ -1,7 +1,7 @@
 @import url(variaveis.css);
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jersey+15&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jersey+15&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Marcellus&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
 :root {
 --cacauintenso-color: #4E3B31;
@@ -20,22 +20,73 @@ body {
     background-image:url(/src/img/Union.png);
     font-family: (inter, sans-serif);
 }
+
+
+/*************************
+**** AREA MENU ****
+**************************/
+
 header {
-    background-color: black;
-    padding: 0;
-    margin: 0;
+    background-color: #b8784e;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    position: relative;
+    z-index: 5;
 }
+
+nav {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 30%;
+
+}
+
+nav a {
+    background: linear-gradient(to left, var(--cacau-acento-color), var(--cacauintenso-color));
+    color: white;
+    border: #ffffff 2px solid;
+    padding: 6px 12px;
+    border-radius:60px;
+    margin-left: 10px;
+    font-family: 'Manrope', Sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-decoration: none;
+    transition: 2s linear;
+    transition: 1s;
+
+}
+
+nav a:hover {
+    transition: 1s;
+    background: #ffffff;
+    border-radius: 50px;
+    border: #824924 4px solid;
+    color: #824924;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 12px 24px;
+
+}
+
+
 
 
 .contato {
     background-color: var(--banhodesol-color);
     width: 100%;
     margin: 0;
+    margin-left: 0%;
+    margin-right: 0%;
     padding: 0px;
     height: 100px;
     text-align: center;
     letter-spacing: 6px;
-    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 .cards {
@@ -59,7 +110,7 @@ h2 {
 .car-agen {
     text-align: center;
     margin: 20px 0;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 2px;
 }
 
@@ -69,40 +120,46 @@ h2 {
     padding: 15px 35px;
     text-align: center;
     display: inline-block;
-    font-size: 25px;
+    font-size: 15px;
     margin: 10px;
     cursor: pointer;
     border-radius: 6px;
     border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+
 }
 .btn-agen:hover {
     background-color: var(--cacauintenso-color);
     color: white;
     box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    transition: 0.2s;
 }
+
+
 
 .formulario {
     background: #EEEADE;
     margin:  50px;
+    margin-left: 50px;
     padding: 30px;
     border-radius: 15px;    
-    width: 1000px;
-    height: 400%;
+    width: 450px;
+    height: 200%;
     display: flex;
-    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 .formulario input, .formulario textarea {
     padding: 10px;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 10px 0;
     width: 100%;
     border: none;
     background: white;
     border-radius: 5px;
     display: block;
     line-height: 1;
-    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;}
-
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
 .formulario textarea{
   min-height: 13px;
   resize: vertical;
@@ -110,8 +167,8 @@ h2 {
 }
 .btn-enviar{
   padding: 10px;
-  background: black;
-  color: white;
+  background: var(--areiasserena-color);
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
@@ -120,29 +177,41 @@ h2 {
   margin: 10px;
   width: 40%;
   height: 40%;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.btn-enviar:hover{
+  background: var(--cacauintenso-color);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .card-container {
-    max-width: 600px;
-    margin: 40px;
-    padding: 10px;
+    max-width: 750px;
+    height: 650px;
+    margin: 0px;
+    margin-right: 50px;
+    padding: 0px;
     border-radius: 10px;
-    line-height: 1.6;
+    line-height: 1.5;
     display: block;
+    background-color: var(--banhodesol-color);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 
 .card-redes h2 {
     color: #000000;
-    font-weight: 600;
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
 }
 
 .card-redes p {
     color: #000000;
-    margin-bottom: 40px;
-    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    font-size: 15px;
     padding: 10px;
     text-align: center;
 }
@@ -161,88 +230,58 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
-    width: 100px;
-    height: 100px;
-    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    margin-right: 40px;
+    margin-left: 100px;
+    width: 70px;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 .image{
-    height: 90px;
-    left: 315px;
-    top: 169.4%;
+    height: 40px;
+    left: 325px;
     border-radius: 50%;
-    padding: 10px;
+    padding: 0px;
+    margin-bottom: 50%;
+    margin-top: 50%;
 }
 
 .info-text h3 {
     color: #000000;
-    margin-top: 0;
-    margin-bottom: 5px;
+    margin: 0;
     font-size: 20px;
-    text-align: right;
+    text-align: left;
 }
 
 .info-text p {
     color: #000000;
-    margin-top: 0;
-    margin-bottom: 5px;
-    line-height: 1.4;
-    font-size: 20px;
-    text-align: right;
-}
-
-
-ul li a.fa {
-    font-size: 40px;
-    color: white;
-    line-height: 80px;
-    transition: 0.5s;
-    padding-right: 14px;
-}
-
-ul.car-redes li a span {
-    padding: 0;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    color: white;
-    letter-spacing: 4px;
-    transition: 0.5s;
-}
-
-ul.car-redes li a{
-    text-decoration: none;
-    display: flex;
-    width: 100px;
-    height: 80px;
-    background: rgb(240, 227, 227);
+    padding: 0;
+    line-height: 1.4;
+    font-size: 15px;
     text-align: left;
-    padding-left: 20px;
-    box-shadow: -20px 20px 50px rgba(0,0,0,0.5);
-}
-
-ul.car-redes li a:hover{
-    width: 300px;
-    box-shadow: -20px 20px 50px rgba(0,0,0,0.5);
 }
 
 .mapa iframe {
     box-shadow: 0 0 20px #2c2424;
-    width: 1900px;
+    width: 1335px;
     height: 450px;
-    border-radius: 10px;
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 50px;
+
 }
 
 .loc-card {
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 0;
-    margin: 20px;
-    width: 1000px;
-    border-radius: 15px;
+    margin: 0px;
+    margin-top: 150px;
+    margin-bottom: 50px;
     font-size: 40px;
     justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     background-color: var(--banhodesol-color);
 }
 
@@ -252,63 +291,127 @@ ul.car-redes li a:hover{
     padding: 20px 30px;
     border-radius: 15px; 
     max-width: 450px;
-    margin: 50px auto; 
+    margin: 100px auto; 
+    display: block;
+    text-align: center;
     transform: rotate(-5deg);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
-.card-feedback {
-    display: flex;
-    align-items: center; 
-    margin-bottom: 15px;
-}
-
-.user {
-    width: 60px;
-    height: 60px;
-    background-color: #ffffff; 
-    border-radius: 50%;
-    margin-right: 15px;
-}
 .user-image {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     background-image: url('/src/img/user.png');
     background-size: cover;
     background-position: left;
     border-radius: 50%;
-    margin-right: 15px;
-}
-
-.feed {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 20%;
 }
 
 .user-name {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-}
+    font-size: 40px;
+    color: #000000;
+    position: relative;
+    }
 
 .avaliacao {
     color: #f7b731; 
+    font-size: 100px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.star {
+    color: #f7b731; 
+    font-size: 1.2rem;
+    margin-right: 2px;
+    
+}
+.star- {
+    color: #d6c8c8; 
     font-size: 1.2rem;
     margin-right: 2px;
 }
-
-.periodo {
+.ponto {
     color: #f0f0f0;
-    font-size: 0.8rem;
-    margin-left: 10px;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+
 }
 
-.text {
+.texto {
     font-size: 1rem;
     line-height: 1.5;
+    margin-top: 100px;
     margin: 0;
     text-align: center;
+}
+
+.social-buttons {
+  list-style: none; 
+  padding: 0;
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 15px; 
+}
+
+.social-buttons a {
+  display: inline-flex; 
+  align-items: center; 
+  padding: 10px 20px;
+  text-decoration: none; 
+  color: #000000; 
+  border-radius: 50px; 
+  font-size: 16px;
+  transition:  0.19s ease;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+
+.social-buttons a.instagram {
+  background-color: var(--cacau-acento-color); 
+}
+
+.social-buttons a.whatsapp {
+  background-color: var(--cacau-acento-color); 
+}
+
+.social-buttons a.tiktok {
+  background-color: var(--cacau-acento-color); 
+}
+ 
+
+.social-buttons a i {
+  margin-right: 10px; 
+}
+
+.social-buttons a:hover {
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.social-buttons a:active {
+  transform: translateY(0); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+@media (max-width: 768px) {
+  .social-buttons a span {
+    display: none; 
+  }
+  .social-buttons a i {
+    margin-right: 0; 
+  }
+  .social-buttons a {
+    padding: 12px 15px; 
+  }
 }
 
 .linha-rolagem {
@@ -346,12 +449,23 @@ ul.car-redes li a:hover{
 }
 
 
+/*************************
+**** AREA FOOTER ****
+**************************/
+
 footer {
-    background-color: #000000;
-    font-size: 10px;
-    color: #ffffff;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: space-between;
+    background-color: #b8784e;
     text-align: center;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 60px;
+    top: 200%;
+
+    p {
+        font-family: "Manrope", Sans-serif;
+        font-size: 17px;
+        color: #ffffff;
+    }
+
 }
