@@ -3,20 +3,6 @@
     margin: 0px;
 }
 
-
-/* 
-/* Media query */
-@media (max-width: 576px) {
-
-    .card {
-        flex-direction: column;
-    }
-
-    .destaque {
-        flex-direction: column;
-    }
-} */
-
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -219,3 +205,5 @@ div.top-icon {
     transform: scale(1.2);
 }
 
+
+/* RESPONSIVIDADE */
