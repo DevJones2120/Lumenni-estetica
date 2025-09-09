@@ -18,6 +18,7 @@
 
 body {
   background-image: url(/src/img/Union.png);
+  background-color: var(--luzdemarfim-color);
   font-family: 'Inter', sans-serif;
   margin: 0;
 }
