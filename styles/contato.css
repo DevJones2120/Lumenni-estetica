@@ -449,40 +449,6 @@ h2 {
   }
 }
 
-.linha-rolagem {
-    background-color: var(--banhodesol-color); 
-    color: var(--cacauintenso-color); 
-    display: flex; 
-    overflow-x: auto; 
-    white-space: nowrap; 
-    padding: 15px 0; 
-}
-
-.linha-rolagem::-webkit-scrollbar {
-    display: none;
-}
-
-.item-1 {
-    font-size: 1.2rem;
-    padding: 0 25px;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.item-1 + .item-2::before {
-    content: '*'; 
-    font-size: 1.5rem;
-    position: absolute;
-    left: -10px; 
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.item-1:first-child::before {
-    content: none;
-}
-
 
 /*************************
 **** AREA FOOTER ****
