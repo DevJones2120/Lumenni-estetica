@@ -17,8 +17,9 @@
 }
 
 body {
-    background-image:url(/src/img/Union.png);
-    font-family: (inter, sans-serif);
+  background-image: url(/src/img/Union.png);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
 }
 
 
