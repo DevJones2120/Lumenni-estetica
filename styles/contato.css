@@ -323,28 +323,22 @@ h2 {
 }
 
 .user-info{
-  
+
 } 
 
 .user-image {
-    width: 0px;
-    height: 50px;
-    background-image: url('/src/img/user.png');
-    background-size: cover;
-    background-position: left;
-    border-radius: 50%;
-    max-width: 50px;
-    max-height: 50px;
+    height: 100px;
+    padding: 0px;
     margin: left;
-    height: 40px;
-    left: 325px;
+    left: 425px;
+    right: 25px;
 }
 
 .user-name {
     font-size: 40px;
     color: #000000;
     position: relative;
-    margin-top: 10px;
+    margin: 0px;
     text-align: center;
     }
 
