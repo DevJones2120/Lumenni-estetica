@@ -140,7 +140,7 @@ h2 {
 
 
 .formulario {
-    background: #EEEADE;
+     background: linear-gradient(to top, var(--cacau-acento-color), #eeead0);
     margin:  50px;
     margin-left: 50px;
     padding: 30px;
@@ -196,7 +196,7 @@ h2 {
     border-radius: 10px;
     line-height: 1.5;
     display: block;
-    background-color: var(--banhodesol-color);
+    background: linear-gradient(to top, var(--cacau-acento-color), #eeead0);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
