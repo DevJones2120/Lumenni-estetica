@@ -121,15 +121,15 @@ main {
 }
 
 .card:hover {
-    background-color: var(--ouropuro-color);
+    background: linear-gradient(to top, var(--cacau-acento-color), #eeead0);
     transition: 1.4s;
 
     h,p {
-        color: white;
+        color: rgb(54, 52, 52);
     }
 
     strong {
-        color: black;
+        color: rgb(151, 91, 42);
     }
 }
 

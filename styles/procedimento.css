@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  background-color: var(--luzdemarfim-color);
+  background: linear-gradient(to top, var(--cacau-acento-color), #eeead0);
   color: var(--texto-escuro);
   line-height: 1.6;
   margin: 0;
@@ -234,22 +234,23 @@ nav a:hover {
 
 
 footer {
-  background-color: #b8784e;
-  text-align: center;
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background-color: #b8784e;
+    text-align: center;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 60px;
+    top: 200%;
+
+    p {
+        font-family: "Manrope", Sans-serif;
+        font-size: 17px;
+        color: #ffffff;
+    }
+
 }
 
-footer p {
-  font-family: "Manrope", Sans-serif;
-  font-size: 16px;
-  color: #ffffff;
-}
 
-/* RESPONSIVO */
 @media (max-width: 900px) {
   .hero-container {
     flex-direction: column-reverse;
