@@ -322,16 +322,22 @@ h2 {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
+.user-info{
+  
+} 
+
 .user-image {
-    width: 80px;
-    height: 80px;
+    width: 0px;
+    height: 50px;
     background-image: url('/src/img/user.png');
     background-size: cover;
     background-position: left;
     border-radius: 50%;
-    margin-top: 0%;
-    margin-left: 50px;
-    margin-right: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    margin: left;
+    height: 40px;
+    left: 325px;
 }
 
 .user-name {
