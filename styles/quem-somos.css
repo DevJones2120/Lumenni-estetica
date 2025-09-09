@@ -110,7 +110,7 @@ main {
     z-index: 0;
 }
 
-/* Conteudo Principal */
+/* CONTEÚDO PRINCIPAL */
 .card {
     display: flex;
     align-items: center;
@@ -129,7 +129,7 @@ main {
         }
 }
 
-.card p,h2 {
+.card p,h2,li {
     padding: 20px;
 }
 
@@ -145,6 +145,9 @@ main {
         color: black;
     }
 }
+
+
+/* BOTÃO DO .CARD */
 
 .btn {padding-left: 30%;}
 
@@ -169,7 +172,7 @@ main {
 
 }
 
-/*  Rodapé */
+/*  RODAPÉ */
 footer {
     background-color: #b8784e;
     text-align: center;
@@ -194,15 +197,19 @@ footer {
 
 div.top-icon {
     position: fixed;
-    width: 32px;
-    height: 32px;
-    bottom: 200px;
+    width: 40px;
+    height: auto;
+    bottom: 80px;
     right: 20px;
     border: var(--cacau-acento-color);
     border-radius: 9px;
     padding: 10px;
     transition-property: transform;
     transition-duration: 4s;
+
+    img {
+        width: 100%;
+    }
 } 
 
 .top-icon:hover {
