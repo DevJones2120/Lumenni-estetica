@@ -270,7 +270,7 @@ h2 {
 }
 
 .mapa iframe {
-  width: 100%;       
+  width: 100%;       /*largura do mapa*/
   height: 500px;     
   border: none;
   display: block;
