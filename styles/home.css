@@ -152,7 +152,7 @@ nav a:hover {
 }
 
 .text-container>button:hover {
-    background-color: var(--cacau-claro-acento-color);
+    background-color: var(--cacau-claro-acento-color); 
     transform: translateY(-10px);
 
 }
