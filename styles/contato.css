@@ -81,6 +81,7 @@ h2 {
     background-color: var(--cacauintenso-color);
     color: white;
     box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    transition: 0.2s;
 }
 
 
@@ -94,7 +95,7 @@ h2 {
     width: 450px;
     height: 200%;
     display: flex;
-    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 .formulario input, .formulario textarea {
@@ -106,8 +107,8 @@ h2 {
     border-radius: 5px;
     display: block;
     line-height: 1;
-    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;}
-
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
 .formulario textarea{
   min-height: 13px;
   resize: vertical;
@@ -142,6 +143,7 @@ h2 {
     line-height: 1.5;
     display: block;
     background-color: var(--banhodesol-color);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 
@@ -350,8 +352,8 @@ ul.car-redes li a:hover{
   color: #000000; 
   border-radius: 50px; 
   font-size: 16px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition:  0.19s ease;
+  box-shadow: 0 6px 8px rgba(10, 0, 0, 0.1); 
 }
 
 
