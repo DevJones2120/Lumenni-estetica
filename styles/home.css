@@ -63,6 +63,19 @@ nav a:hover {
 
 }
 
+nav>img {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: -305px;
+    top: -3px;
+    z-index: 5;
+    border-radius: 50px;
+    border: white 1px solid;
+    box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.645);
+
+}
+
 
 /*************************
 **** AREA 1ª SEÇÃO ****
@@ -380,3 +393,6 @@ footer {
     transition: 1s;
 
 }
+
+
+
