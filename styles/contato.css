@@ -94,7 +94,7 @@ nav>img {
 
 
 .contato {
-    background-color: var(--banhodesol-color);
+    background-color: var(--ouropuro-color);
     width: 100%;
     margin: 0;
     margin-left: 0%;
@@ -115,6 +115,7 @@ h3 {
     color: var(--cacau-escuro-color);
     text-align: center;
     margin: 15px 0;
+    padding-top: 10px;
 }
 
 h2 {
@@ -132,7 +133,7 @@ h2 {
 }
 
 .btn-agen {
-    background-color: var(--ouropuro-color);
+    background-color: var(--cacau-acento-color);
     color: var(--luzdemarfim-color);
     padding: 15px 35px;
     text-align: center;
@@ -302,7 +303,7 @@ h2 {
     font-size: 40px;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    background-color: var(--banhodesol-color);
+    background-color: var(--ouropuro-color);
 }
 
 .conteiner {
@@ -404,15 +405,15 @@ h2 {
 
 
 .social-buttons a.instagram {
-  background-color: var(--cacau-acento-color); 
+  background-color: var(--cacau-fundo-color); 
 }
 
 .social-buttons a.whatsapp {
-  background-color: var(--cacau-acento-color); 
+  background-color: var(--cacau-fundo-color); 
 }
 
 .social-buttons a.tiktok {
-  background-color: var(--cacau-acento-color); 
+  background-color: var(--cacau-fundo-color); 
 }
  
 
