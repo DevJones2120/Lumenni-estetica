@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="../styles/variaveis.css" />
   <link rel="stylesheet" href="painel.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"></script>
 </head>
 <body>
   <header>
@@ -76,22 +81,22 @@
         <div class="card">
           <i class="fas fa-calendar-alt icon"></i>
           <h3>Próximo Agendamento</h3>
-          <span>15/10/2023 - 14:30</span>
+          <span>Carregando...</span>
         </div>
         <div class="card">
           <i class="fas fa-stethoscope icon"></i>
           <h3>Procedimentos Realizados</h3>
-          <span>3</span>
+          <span>Carregando...</span>
         </div>
         <div class="card">
           <i class="fas fa-gift icon"></i>
           <h3>Pontos de Fidelidade</h3>
-          <span>600</span>
+          <span>Carregando...</span>
         </div>
         <div class="card">
           <i class="fas fa-star icon"></i>
           <h3>Avaliação Média</h3>
-          <span>4.8</span>
+          <span>Carregando...</span>
         </div>
       </div>
 
@@ -150,16 +155,15 @@
         <li><i class="fas fa-bed"></i> Mantenha uma rotina de sono adequada.</li>
         <li><i class="fas fa-ban"></i> Evite o consumo excessivo de álcool e tabaco.</li>
         <li><i class="fas fa-walking"></i> Pratique exercícios físicos leves conforme orientação médica.</li>
-        <li><i class="fas fa-user-md"></i> Informe seu médico sobre qualquer sintoma ou reação inesperada.</li>
+        <li><i class="fas fa-pills"></i> Use medicamentos prescritos corretamente.</li>
       </ul>
     </section>
   </main>
 
-  <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
+  <footer>
+    <p>Lumenni Estetica Avançada &copy; 2025 - 2026 | Todos os direitos reservados.</p>
+  </footer>
 
-  <!-- Inicialização do Firebase -->
   <script>
     const firebaseConfig = {
       apiKey: "AIzaSyBV3ny1x2Y_JXylVspt797G5p56zCJ-Gco",
@@ -171,24 +175,42 @@
       measurementId: "G-B433W9ZE86"
     };
 
-    firebase.initializeApp(firebaseConfig);
+    const app = firebase.initializeApp(firebaseConfig);
     const auth = firebase.auth();
+    const db = firebase.firestore();
 
-    // Protege a página
-    auth.onAuthStateChanged((user) => {
+    auth.onAuthStateChanged(async user => {
       if (!user) {
-        alert("Você precisa estar logado para acessar esta página.");
-        window.location.href = "login.html";
+        alert('Você precisa estar logado para acessar esta página.');
+        window.location.href = 'login.html';
+        return;
+      }
+
+      try {
+        const docRef = db.collection('users').doc(user.uid);
+        const doc = await docRef.get();
+
+        if (doc.exists) {
+          const data = doc.data();
+
+          // Atualiza os cards do painel
+          const cards = document.querySelectorAll('#painel-cliente .dashboard .card span');
+          cards[0].textContent = data.proximoAgendamento || 'Sem agendamento';
+          cards[1].textContent = data.procedimentosRealizados || '0';
+          cards[2].textContent = data.pontosFidelidade || '0';
+          cards[3].textContent = data.avaliacoesMedia || '0';
+        } else {
+          alert('Dados do usuário não encontrados.');
+        }
+      } catch (error) {
+        console.error('Erro ao carregar dados do usuário:', error);
       }
     });
 
-    // Botão de logout
     document.getElementById('logout-btn').addEventListener('click', () => {
       auth.signOut().then(() => {
         alert('Você saiu da área do cliente.');
-        window.location.href = '../index.html';
-      }).catch((error) => {
-        alert('Erro ao sair: ' + error.message);
+        window.location.href = 'login.html';
       });
     });
   </script>
