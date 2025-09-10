@@ -94,13 +94,13 @@ nav>img {
 
 
 .contato {
-    background-color: var(--banhodesol-color);
+    background-color: var(--ouropuro-color);
     width: 100%;
     margin: 0;
     margin-left: 0%;
     margin-right: 0%;
     padding: 0px;
-    height: 100px;
+    height: 110px;
     text-align: center;
     letter-spacing: 6px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
@@ -108,6 +108,9 @@ nav>img {
 
 .cards {
     display: flex;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 50px;
 }
 
 h3 {
@@ -115,6 +118,7 @@ h3 {
     color: var(--cacau-escuro-color);
     text-align: center;
     margin: 15px 0;
+    padding-top: 10px;
 }
 
 h2 {
@@ -126,13 +130,14 @@ h2 {
 }
 .car-agen {
     text-align: center;
-    margin: 20px 0;
+    margin-top: 40px;
+    margin-bottom: 15px;
     font-size: 15px;
     letter-spacing: 2px;
 }
 
 .btn-agen {
-    background-color: var(--ouropuro-color);
+    background-color: var(--cacau-acento-color);
     color: var(--luzdemarfim-color);
     padding: 15px 35px;
     text-align: center;
@@ -302,15 +307,19 @@ h2 {
     font-size: 40px;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    background-color: var(--banhodesol-color);
+    background-color: var(--ouropuro-color);
 }
 
 .conteiner {
     background-color: var(--banhodesol-color);
     color: #ffffff; 
-    padding: 20px 30px;
+    padding:0px;
     border-radius: 15px; 
-    max-width: 450px;
+    max-width: 650px;
+    max-height: 350px;
+    height: 100%;
+    align-items: stretch;
+    width: 80%;
     margin: 100px auto; 
     display: block;
     text-align: center;
@@ -318,28 +327,30 @@ h2 {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
+.user-info{
+
+} 
+
 .user-image {
-    width: 80px;
-    height: 80px;
-    background-image: url('/src/img/user.png');
-    background-size: cover;
-    background-position: left;
-    border-radius: 50%;
-    margin-top: 10%;
-    margin-bottom: 20%;
+    height: 100px;
+    padding: 0px;
+    margin: left;
+    left: 425px;
+    right: 25px;
 }
 
 .user-name {
     font-size: 40px;
     color: #000000;
     position: relative;
+    margin: 0px;
+    text-align: center;
     }
 
 .avaliacao {
     color: #f7b731; 
     font-size: 100px;
     margin-right: 20px;
-    display: flex;
     align-items: center;
     margin-bottom: 0px;
 }
@@ -349,8 +360,8 @@ h2 {
     margin-right: 2px;
     
 }
-.star- {
-    color: #d6c8c8; 
+.star {
+    color: #f7b731; 
     font-size: 1.2rem;
     margin-right: 2px;
 }
@@ -369,7 +380,10 @@ h2 {
     margin-top: 100px;
     margin: 0;
     text-align: center;
-}
+    color: #000000;
+    padding: 4px;
+    margin-bottom: 20px;
+  }
 
 .social-buttons {
   list-style: none; 
@@ -395,15 +409,15 @@ h2 {
 
 
 .social-buttons a.instagram {
-  background-color: var(--cacau-acento-color); 
+  background-color: var(--cacau-fundo-color); 
 }
 
 .social-buttons a.whatsapp {
-  background-color: var(--cacau-acento-color); 
+  background-color: var(--cacau-fundo-color); 
 }
 
 .social-buttons a.tiktok {
-  background-color: var(--cacau-acento-color); 
+  background-color: var(--cacau-fundo-color); 
 }
  
 
@@ -432,40 +446,6 @@ h2 {
   .social-buttons a {
     padding: 12px 15px; 
   }
-}
-
-.linha-rolagem {
-    background-color: var(--banhodesol-color); 
-    color: var(--cacauintenso-color); 
-    display: flex; 
-    overflow-x: auto; 
-    white-space: nowrap; 
-    padding: 15px 0; 
-}
-
-.linha-rolagem::-webkit-scrollbar {
-    display: none;
-}
-
-.item-1 {
-    font-size: 1.2rem;
-    padding: 0 25px;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.item-1 + .item-2::before {
-    content: '*'; 
-    font-size: 1.5rem;
-    position: absolute;
-    left: -10px; 
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.item-1:first-child::before {
-    content: none;
 }
 
 
