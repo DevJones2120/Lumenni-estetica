@@ -454,7 +454,7 @@ height: 270px;
     height: auto;
     margin-bottom: 1rem;
     overflow: hidden;
-    margin-left: 820px;
+    margin-left: 765px;
   }
 
   nav ul {
@@ -489,10 +489,10 @@ height: 270px;
   }
 
 
-   .background-image {
-
-    width: 180%;
-    overflow: hidden;
+  .background-image {
+  width: 180%;
+  overflow: hidden;
+  margin-top: -60px;
 
 
    }
@@ -558,7 +558,7 @@ height: 270px;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    margin-top: -350px;
+    margin-top: -385px;
     height: 1500px;
   }
 
@@ -612,9 +612,9 @@ height: 270px;
   }
 
   .whatsapp-icon img {
-    width: 50px;
-    height: 50px;
-    left:80px;
+    width: 35px;
+    height: 35px;
+    left: 335px;
     bottom: 120px;
   }
 
@@ -624,7 +624,7 @@ height: 270px;
     z-index: 5;
     width: 100%;
     height: 70px;
-    top: 219%;
+    top: 206%;
   }
 
   footer p {
