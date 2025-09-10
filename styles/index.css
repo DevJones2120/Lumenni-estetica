@@ -545,7 +545,7 @@ display: flex;
     height: auto;
     overflow: hidden;
     position: absolute;
-    margin-top: -420px;
+    margin-top: -370px;
     
   }
 
@@ -611,6 +611,8 @@ display: flex;
   .whatsapp-icon img {
     width: 50px;
     height: 50px;
+    left:80px;
+    bottom: 120px;
   }
 
   /* FOOTER */
@@ -619,7 +621,7 @@ display: flex;
     z-index: 5;
     width: 100%;
     height: 70px;
-    top: 240%;
+    top: 219%;
   }
 
   footer p {
