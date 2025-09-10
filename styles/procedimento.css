@@ -20,7 +20,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
 }
 
 * {
@@ -38,7 +38,7 @@ body {
   padding: 0;
 }
 
-/* MENU */
+
 /*************************
 **** AREA MENU ****
 **************************/
@@ -190,10 +190,11 @@ nav>img {
   width: 34%;
 }
 
+   /*** flip animação visual dos elementos para fazer o card virar ***/
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /**** ajusta o numero de colunas conforme o tamanho da tela (responsivo)****/
   gap: 1.5em;
   margin-top: 2em;
   margin-bottom: 7em; 
@@ -201,7 +202,7 @@ nav>img {
 
 
 .cartao {
-  perspective: 1000px;
+  perspective: 1000px;  /**** profundidade do conteiner 3d */
   background: linear-gradient(to top, var(--cacau-acento-color), #eeead0);
   height: 350px;
 }
@@ -211,11 +212,11 @@ nav>img {
   width: 100%;
   height: 100%;
   transition: transform 0.8s;
-  transform-style: preserve-3d;
+  transform-style: preserve-3d; /*****divide conteudo em frente e verso****/
 }
 
 .cartao:hover .cartao-interno {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /****** gira o conteudo 180 graus *****/
 }
 
 .cartao-frente,
@@ -223,7 +224,7 @@ nav>img {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  backface-visibility: hidden; /**** esconde o verso quando nao esta virado *****/
   border-radius: 12px;
   overflow: hidden;
 }
@@ -231,20 +232,20 @@ nav>img {
 .cartao-frente img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /*****A imagem foi redimensionado para cobrir todo o contêiner.*****/
 }
 
 .cartao-verso {
   background: #fff;
-  transform: rotateY(180deg);
+  transform: rotateY(180deg);  /**** gira o verso 180 graus para ficar escondido *****/
   padding: 1em;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  /**** alinha conteudo em coluna vertical, deixando um a baixo do outro ****/
 }
 
 .corpo-cartao {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  /**** alinha conteudo em coluna vertical, deixando um a baixo do outro ****/
 }
 
 .etiqueta-tempo {
