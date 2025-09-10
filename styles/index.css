@@ -501,7 +501,7 @@ height: 270px;
     text-align: center;
     padding: 1rem;
     overflow: hidden;
-    margin-top: -178px;
+    margin-top: -320px;
     margin-left: -100px;
     padding: 100px;
   }
@@ -548,7 +548,8 @@ height: 270px;
     height: auto;
     overflow: hidden;
     position: absolute;
-    margin-top: -370px;
+    margin-top: -350px;
+
     
   }
 
