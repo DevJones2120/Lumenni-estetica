@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Área do Cliente - Login</title>
+  <link rel="stylesheet" href="../styles/variaveis.css" />
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <nav style="background-color: #b8784e; height: 65px; display: flex; align-items: center; padding: 0 20px;">
+      <button onclick="window.location.href='index.html'" style="background: none; border: none; color: white; font-size: 18px; cursor: pointer;">
+        ← Voltar
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Login</h1>
+    <form id="login-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <p>Não tem conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+  </main>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = e.target.email.value;
+      const password = e.target.password.value;
+
+      // Aqui você faria a chamada para backend para autenticar
+      alert(`Login com email: ${email}`);
+
+      // Simulando login bem-sucedido, redireciona para painel
+      window.location.href = 'painel-paciente.html';
+    });
+  </script>
+</body>
+</html>
