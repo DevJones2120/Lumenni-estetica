@@ -155,10 +155,41 @@
     </section>
   </main>
 
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
+
+  <!-- Inicialização do Firebase -->
   <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBV3ny1x2Y_JXylVspt797G5p56zCJ-Gco",
+      authDomain: "lumenni-estetica-autentication.firebaseapp.com",
+      projectId: "lumenni-estetica-autentication",
+      storageBucket: "lumenni-estetica-autentication.firebasestorage.app",
+      messagingSenderId: "481878336776",
+      appId: "1:481878336776:web:b808b922b64026c7f8b8bd",
+      measurementId: "G-B433W9ZE86"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+
+    // Protege a página
+    auth.onAuthStateChanged((user) => {
+      if (!user) {
+        alert("Você precisa estar logado para acessar esta página.");
+        window.location.href = "login.html";
+      }
+    });
+
+    // Botão de logout
     document.getElementById('logout-btn').addEventListener('click', () => {
-      alert('Você saiu da área do cliente.');
-      window.location.href = '../index.html';
+      auth.signOut().then(() => {
+        alert('Você saiu da área do cliente.');
+        window.location.href = '../index.html';
+      }).catch((error) => {
+        alert('Erro ao sair: ' + error.message);
+      });
     });
   </script>
 </body>

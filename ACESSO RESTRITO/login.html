@@ -22,41 +22,62 @@
   </div>
 
   <main>
-
     <div> 
+      <h1>Entrar</h1>
+      <form id="login-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-    <h1>Entrar</h1>
-    <form id="login-form">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required />
 
-      <label for="password">Senha:</label>
-      <input type="password" id="password" name="password" required />
+        <button type="submit">Entrar</button>
+      </form>
 
-      <button type="submit">Entrar</button>
-    </form>
-
-    <p>Não tem conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
-
+      <p>Não tem conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
     </div>
-
   </main>
 
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
+
+  <!-- Inicialização do Firebase -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBV3ny1x2Y_JXylVspt797G5p56zCJ-Gco",
+      authDomain: "lumenni-estetica-autentication.firebaseapp.com",
+      projectId: "lumenni-estetica-autentication",
+      storageBucket: "lumenni-estetica-autentication.firebasestorage.app",
+      messagingSenderId: "481878336776",
+      appId: "1:481878336776:web:b808b922b64026c7f8b8bd",
+      measurementId: "G-B433W9ZE86"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+  </script>
+
+  <!-- Login Firebase -->
   <script>
     document.getElementById('login-form').addEventListener('submit', function(e) {
       e.preventDefault();
       const email = e.target.email.value;
       const password = e.target.password.value;
 
-      // ATENTENTICAR COM O FIREBISE
-      alert(`Login com email: ${email}`);
-
-      // CASO EFETUADO CORRETAMENTE E VALIDO O LOGIN DIRECIONA PARA O PAINEL
-      window.location.href = 'painel-paciente.html';
+      auth.signInWithEmailAndPassword(email, password)
+        .then(() => {
+          alert("Login realizado com sucesso!");
+          window.location.href = 'painel-paciente.html';
+        })
+        .catch((error) => {
+          alert("Erro ao fazer login: " + error.message);
+        });
     });
   </script>
 </body>
+
 <footer>
-    <p>Lumenni Estetica Avançada &copy; 2025 - 2026 | Todos os direitos reservados.</p>
+  <p>Lumenni Estetica Avançada &copy; 2025 - 2026 | Todos os direitos reservados.</p>
 </footer>
 </html>

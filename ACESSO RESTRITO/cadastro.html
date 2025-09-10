@@ -6,7 +6,6 @@
   <title>Área do Cliente - Cadastro</title>
   <link rel="stylesheet" href="../styles/variaveis.css" />
   <link rel="stylesheet" href="cadastro.css">
-  
 </head>
 <body>
   <header>
@@ -17,33 +16,55 @@
       </button>
     </nav>
   </header>
-    <div class="background">
+
+  <div class="background">
     <img src="../src/img/background-fundo_1520x625.png" alt="">
   </div>
 
   <main>
     <div>
-    <h1>Cadastro</h1>
-    <form id="cadastro-form">
-      <label for="nome">Nome Completo:</label>
-      <input type="text" id="nome" name="nome" required />
+      <h1>Cadastro</h1>
+      <form id="cadastro-form">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-      <label for="password">Senha:</label>
-      <input type="password" id="password" name="password" required />
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required />
 
-      <label for="password2">Confirme a Senha:</label>
-      <input type="password" id="password2" name="password2" required />
+        <label for="password2">Confirme a Senha:</label>
+        <input type="password" id="password2" name="password2" required />
 
-      <button type="submit">Cadastrar</button>
-    </form>
+        <button type="submit">Cadastrar</button>
+      </form>
 
-    <p>Já tem conta? <a href="login.html">Faça login aqui</a></p>
+      <p>Já tem conta? <a href="login.html">Faça login aqui</a></p>
     </div>
   </main>
 
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
+
+  <!-- Inicialização do Firebase -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBV3ny1x2Y_JXylVspt797G5p56zCJ-Gco",
+      authDomain: "lumenni-estetica-autentication.firebaseapp.com",
+      projectId: "lumenni-estetica-autentication",
+      storageBucket: "lumenni-estetica-autentication.firebasestorage.app",
+      messagingSenderId: "481878336776",
+      appId: "1:481878336776:web:b808b922b64026c7f8b8bd",
+      measurementId: "G-B433W9ZE86"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+  </script>
+
+  <!-- Cadastro Firebase -->
   <script>
     document.getElementById('cadastro-form').addEventListener('submit', function(e) {
       e.preventDefault();
@@ -57,15 +78,19 @@
         return;
       }
 
-      //FIREBASE ADICIONAR CLIENTE
-      alert(`Cadastro realizado para: ${nome}`);
-
-      //CASO FEITO CADASTRO REDIRECIONAR PARA PAGINA DE LOGIN - SEGURANÇA
-      window.location.href = 'login.html';
+      auth.createUserWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+          alert(`Cadastro realizado com sucesso para: ${nome}`);
+          window.location.href = 'login.html';
+        })
+        .catch((error) => {
+          alert("Erro ao cadastrar: " + error.message);
+        });
     });
   </script>
 </body>
+
 <footer>
-    <p>Lumenni Estetica Avançada &copy; 2025 - 2026 | Todos os direitos reservados.</p>
+  <p>Lumenni Estetica Avançada &copy; 2025 - 2026 | Todos os direitos reservados.</p>
 </footer>
 </html>
