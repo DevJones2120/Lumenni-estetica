@@ -56,8 +56,8 @@ nav {
     position: relative;
     z-index: 5;
     width: 100%;
-    margin-top: 20px;
-    margin-left: 32.6%;
+    margin-top: 10px;
+    margin-left: 35%;
 
 }
 
@@ -90,17 +90,52 @@ nav a:hover {
 
 }
 
+/* ----------------------------------- */
+
+nav a.hover5 {
+    background: linear-gradient(to left, var(--cacau-acento-color), var(--cacauintenso-color));
+    color: white;
+    border: #ffffff 2px solid;
+    padding: 6px 12px;
+    border-radius: 60px;
+    margin-left: 440px;
+    font-family: 'Manrope', Sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-decoration: none;
+    transition: 1s;
+}
+
+nav a.hover5:hover {
+    background: #ffffff;
+    border-radius: 50px;
+    border: var(--marrom-claro-color) 4px solid;
+    color: var(--marrom-claro-color);
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 12px 24px;
+}
+
+
+/* ----------------------------------- */
+
 nav>img {
-    width: 52px;
+    width: 50px;
     height: auto;
     position: absolute;
-    left: -345px;
-    top: -14px;
+    left: -305px;
+    top: -3px;
     z-index: 5;
     border-radius: 50px;
     border: white 1px solid;
     box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.645);
 
+}
+
+nav>ul {
+  margin-top: 11px;
+  margin-left: 38px;
 }
 
 
